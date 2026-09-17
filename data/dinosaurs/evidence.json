@@ -1,0 +1,974 @@
+{
+  "downloaded_at": "2026-09-17T03:26:28.137670+00:00",
+  "taxon": "Dinosauria^Aves",
+  "license": "CC BY 4.0",
+  "sources": [
+    {
+      "region": "AFR",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=AFR&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "ab93ff1cc36865b64a30bb637f8a599da59978a8c3514a0c8361f6133921d817",
+      "records": 521
+    },
+    {
+      "region": "SOA",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=SOA&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "6648133ec8bb6e465dbcc1189f664603768571797c7d95bdfa37e23533f09e1d",
+      "records": 426
+    },
+    {
+      "region": "NOA",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=NOA&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "98f4d859eb776f6cef36bf12eced2fc17dc0072722ed57800ccfb00bae636ca9",
+      "records": 4107
+    },
+    {
+      "region": "AUS",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=AUS&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "22bdb666418674e526c7f8ca741c8c956dad6705dbe7b32496450bc5e62eb0b7",
+      "records": 92
+    },
+    {
+      "region": "ATA",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=ATA&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "f33fc7c80440fa7b627b2256ead68100f1978a98a3d0d5c70b2757179bf398d4",
+      "records": 7
+    },
+    {
+      "region": "ASI",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=ASI%2C%5EIN%2C%5EPK%2C%5EBD%2C%5ELK%2C%5ENP%2C%5EBT&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "cdc9b74a506bda4463d946c7dbb11c7eef8300ca3cc5d68b7e3211c76c4481d8",
+      "records": 1772
+    },
+    {
+      "region": "IND",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=IN%2CPK%2CBD%2CLK%2CNP%2CBT&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "f641f1249ce89ba16a9445ffafa9b336a58884cac8d73ba01bdd7d0aa6250616",
+      "records": 194
+    },
+    {
+      "region": "EUR",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?base_name=Dinosauria%5EAves&cc=EUR&min_ma=66&max_ma=235&idreso=genus&idqual=genus_certain&rowcount=yes&limit=all",
+      "sha256": "88c5337c3db24ff80e21644bcf7429cac25dac93aa5da289210ae9fe965d766d",
+      "records": 1320
+    }
+  ],
+  "eras": {
+    "220": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 30,
+        "collections": 20,
+        "sample_occurrences": [
+          "occ:372891",
+          "occ:384555",
+          "occ:385301",
+          "occ:385604",
+          "occ:385607"
+        ],
+        "sample_references": [
+          "ref:14536",
+          "ref:9521",
+          "ref:9815",
+          "ref:9818"
+        ],
+        "anchor_id": "220-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 17,
+        "collections": 16,
+        "sample_occurrences": [
+          "occ:360364",
+          "occ:461293",
+          "occ:513572",
+          "occ:513603",
+          "occ:536062"
+        ],
+        "sample_references": [
+          "ref:11929",
+          "ref:13920",
+          "ref:13923",
+          "ref:26809",
+          "ref:8988"
+        ],
+        "anchor_id": "220-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 145,
+        "collections": 94,
+        "sample_occurrences": [
+          "occ:283828",
+          "occ:283860",
+          "occ:283950",
+          "occ:283952",
+          "occ:370541"
+        ],
+        "sample_references": [
+          "ref:12994",
+          "ref:7466",
+          "ref:78090",
+          "ref:78483",
+          "ref:85047"
+        ],
+        "anchor_id": "220-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 1,
+        "collections": 1,
+        "sample_occurrences": [
+          "occ:1126079"
+        ],
+        "sample_references": [
+          "ref:79967"
+        ],
+        "anchor_id": "220-4",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "IND",
+        "name": "印度",
+        "occurrences": 3,
+        "collections": 3,
+        "sample_occurrences": [
+          "occ:1066207",
+          "occ:1066208",
+          "occ:1066214"
+        ],
+        "sample_references": [
+          "ref:42497"
+        ],
+        "anchor_id": "220-6",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 56,
+        "collections": 33,
+        "sample_occurrences": [
+          "occ:149988",
+          "occ:220070",
+          "occ:220073",
+          "occ:220082",
+          "occ:220084"
+        ],
+        "sample_references": [
+          "ref:19481",
+          "ref:26308",
+          "ref:30215",
+          "ref:5702",
+          "ref:75731"
+        ],
+        "anchor_id": "220-8",
+        "anchor_status": "candidate_approximate"
+      }
+    ],
+    "200": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 144,
+        "collections": 99,
+        "sample_occurrences": [
+          "occ:150174",
+          "occ:150175",
+          "occ:220033",
+          "occ:297698",
+          "occ:297836"
+        ],
+        "sample_references": [
+          "ref:12660",
+          "ref:38488",
+          "ref:4425",
+          "ref:5925"
+        ],
+        "anchor_id": "200-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 7,
+        "collections": 7,
+        "sample_occurrences": [
+          "occ:513573",
+          "occ:534508",
+          "occ:566942",
+          "occ:811339",
+          "occ:1063646"
+        ],
+        "sample_references": [
+          "ref:13924",
+          "ref:29824",
+          "ref:42432",
+          "ref:52146"
+        ],
+        "anchor_id": "200-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 611,
+        "collections": 180,
+        "sample_occurrences": [
+          "occ:149981",
+          "occ:149982",
+          "occ:150849",
+          "occ:150850",
+          "occ:366438"
+        ],
+        "sample_references": [
+          "ref:13844",
+          "ref:4405",
+          "ref:9194"
+        ],
+        "anchor_id": "200-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 4,
+        "collections": 2,
+        "sample_occurrences": [
+          "occ:591693",
+          "occ:1559194",
+          "occ:1559196",
+          "occ:1559197"
+        ],
+        "sample_references": [
+          "ref:76631",
+          "ref:77910"
+        ],
+        "anchor_id": "200-4",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ATA",
+        "name": "南极洲",
+        "occurrences": 2,
+        "collections": 1,
+        "sample_occurrences": [
+          "occ:475133",
+          "occ:475135"
+        ],
+        "sample_references": [
+          "ref:12572",
+          "ref:26326"
+        ],
+        "anchor_id": "200-5",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 106,
+        "collections": 50,
+        "sample_occurrences": [
+          "occ:259970",
+          "occ:259971",
+          "occ:472008",
+          "occ:474638",
+          "occ:490781"
+        ],
+        "sample_references": [
+          "ref:12462",
+          "ref:12541",
+          "ref:12552",
+          "ref:7052"
+        ],
+        "anchor_id": "200-9",
+        "anchor_status": "hold_coast_or_shallow_water"
+      },
+      {
+        "region": "IND",
+        "name": "印度",
+        "occurrences": 10,
+        "collections": 9,
+        "sample_occurrences": [
+          "occ:220038",
+          "occ:372542",
+          "occ:513185",
+          "occ:637751",
+          "occ:706064"
+        ],
+        "sample_references": [
+          "ref:25610",
+          "ref:43786",
+          "ref:9479"
+        ],
+        "anchor_id": "200-6",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 135,
+        "collections": 83,
+        "sample_occurrences": [
+          "occ:220087",
+          "occ:255449",
+          "occ:255450",
+          "occ:269536",
+          "occ:296427"
+        ],
+        "sample_references": [
+          "ref:23532",
+          "ref:5702",
+          "ref:7786",
+          "ref:78712"
+        ],
+        "anchor_id": "200-8",
+        "anchor_status": "hold_coast_or_shallow_water"
+      }
+    ],
+    "170": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 40,
+        "collections": 34,
+        "sample_occurrences": [
+          "occ:367656",
+          "occ:461469",
+          "occ:461471",
+          "occ:461472",
+          "occ:461474"
+        ],
+        "sample_references": [
+          "ref:10538",
+          "ref:11947"
+        ],
+        "anchor_id": "170-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 19,
+        "collections": 14,
+        "sample_occurrences": [
+          "occ:367430",
+          "occ:468455",
+          "occ:468457",
+          "occ:566942",
+          "occ:790505"
+        ],
+        "sample_references": [
+          "ref:12418",
+          "ref:29824",
+          "ref:33371",
+          "ref:82375"
+        ],
+        "anchor_id": "170-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 65,
+        "collections": 47,
+        "sample_occurrences": [
+          "occ:261839",
+          "occ:405149",
+          "occ:491192",
+          "occ:491193",
+          "occ:491194"
+        ],
+        "sample_references": [
+          "ref:13278",
+          "ref:43968",
+          "ref:7096"
+        ],
+        "anchor_id": "170-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 3,
+        "collections": 3,
+        "sample_occurrences": [
+          "occ:577469",
+          "occ:591693",
+          "occ:1126089"
+        ],
+        "sample_references": [
+          "ref:29189",
+          "ref:62321",
+          "ref:76631"
+        ],
+        "anchor_id": "170-4",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 158,
+        "collections": 103,
+        "sample_occurrences": [
+          "occ:292850",
+          "occ:295292",
+          "occ:295293",
+          "occ:295296",
+          "occ:391679"
+        ],
+        "sample_references": [
+          "ref:12416",
+          "ref:17258",
+          "ref:7648",
+          "ref:7753",
+          "ref:7755"
+        ],
+        "anchor_id": "170-9",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "IND",
+        "name": "印度",
+        "occurrences": 3,
+        "collections": 2,
+        "sample_occurrences": [
+          "occ:747141",
+          "occ:747142",
+          "occ:747143"
+        ],
+        "sample_references": [
+          "ref:26901",
+          "ref:76823"
+        ],
+        "anchor_id": "170-6",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 90,
+        "collections": 67,
+        "sample_occurrences": [
+          "occ:292785",
+          "occ:303971",
+          "occ:303972",
+          "occ:384453",
+          "occ:405996"
+        ],
+        "sample_references": [
+          "ref:15587",
+          "ref:17690",
+          "ref:27913",
+          "ref:7643"
+        ],
+        "anchor_id": "170-8",
+        "anchor_status": "candidate_approximate"
+      }
+    ],
+    "150": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 133,
+        "collections": 86,
+        "sample_occurrences": [
+          "occ:475067",
+          "occ:475140",
+          "occ:475141",
+          "occ:475142",
+          "occ:475143"
+        ],
+        "sample_references": [
+          "ref:12562",
+          "ref:12582",
+          "ref:12585"
+        ],
+        "anchor_id": "150-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 20,
+        "collections": 14,
+        "sample_occurrences": [
+          "occ:504548",
+          "occ:513365",
+          "occ:519368",
+          "occ:778886",
+          "occ:778895"
+        ],
+        "sample_references": [
+          "ref:13656",
+          "ref:13864",
+          "ref:14210",
+          "ref:55192",
+          "ref:73599"
+        ],
+        "anchor_id": "150-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 718,
+        "collections": 303,
+        "sample_occurrences": [
+          "occ:139307",
+          "occ:139308",
+          "occ:149592",
+          "occ:149596",
+          "occ:149597"
+        ],
+        "sample_references": [
+          "ref:4209",
+          "ref:4387",
+          "ref:63746",
+          "ref:7813"
+        ],
+        "anchor_id": "150-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 88,
+        "collections": 61,
+        "sample_occurrences": [
+          "occ:130209",
+          "occ:256216",
+          "occ:402859",
+          "occ:402860",
+          "occ:402861"
+        ],
+        "sample_references": [
+          "ref:10370",
+          "ref:13360",
+          "ref:24276",
+          "ref:6970",
+          "ref:6976"
+        ],
+        "anchor_id": "150-9",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 200,
+        "collections": 162,
+        "sample_occurrences": [
+          "occ:150313",
+          "occ:150314",
+          "occ:280829",
+          "occ:280927",
+          "occ:372429"
+        ],
+        "sample_references": [
+          "ref:5982",
+          "ref:7419",
+          "ref:7423",
+          "ref:9478"
+        ],
+        "anchor_id": "150-8",
+        "anchor_status": "hold_coast_or_shallow_water"
+      }
+    ],
+    "120": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 31,
+        "collections": 25,
+        "sample_occurrences": [
+          "occ:260595",
+          "occ:260601",
+          "occ:260899",
+          "occ:260901",
+          "occ:262347"
+        ],
+        "sample_references": [
+          "ref:30615",
+          "ref:7056"
+        ],
+        "anchor_id": "120-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 19,
+        "collections": 17,
+        "sample_occurrences": [
+          "occ:150240",
+          "occ:294012",
+          "occ:294055",
+          "occ:401692",
+          "occ:465497"
+        ],
+        "sample_references": [
+          "ref:10338",
+          "ref:11791",
+          "ref:43621",
+          "ref:5970",
+          "ref:7683"
+        ],
+        "anchor_id": "120-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 136,
+        "collections": 88,
+        "sample_occurrences": [
+          "occ:220190",
+          "occ:247238",
+          "occ:259322",
+          "occ:260040",
+          "occ:260041"
+        ],
+        "sample_references": [
+          "ref:13525",
+          "ref:68145",
+          "ref:6837",
+          "ref:7057",
+          "ref:7059"
+        ],
+        "anchor_id": "120-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 34,
+        "collections": 21,
+        "sample_occurrences": [
+          "occ:368057",
+          "occ:401696",
+          "occ:513430",
+          "occ:577472",
+          "occ:585457"
+        ],
+        "sample_references": [
+          "ref:10340",
+          "ref:13869",
+          "ref:17468",
+          "ref:62321",
+          "ref:9300"
+        ],
+        "anchor_id": "120-4",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 398,
+        "collections": 237,
+        "sample_occurrences": [
+          "occ:130294",
+          "occ:130295",
+          "occ:269458",
+          "occ:343790",
+          "occ:343953"
+        ],
+        "sample_references": [
+          "ref:19421",
+          "ref:26795",
+          "ref:31493",
+          "ref:4006",
+          "ref:7186"
+        ],
+        "anchor_id": "120-9",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 223,
+        "collections": 179,
+        "sample_occurrences": [
+          "occ:149860",
+          "occ:219965",
+          "occ:220095",
+          "occ:220226",
+          "occ:220227"
+        ],
+        "sample_references": [
+          "ref:19188",
+          "ref:4398",
+          "ref:5672",
+          "ref:5691"
+        ],
+        "anchor_id": "120-8",
+        "anchor_status": "hold_coast_or_shallow_water"
+      }
+    ],
+    "105": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 102,
+        "collections": 69,
+        "sample_occurrences": [
+          "occ:259972",
+          "occ:259976",
+          "occ:260589",
+          "occ:260596",
+          "occ:260598"
+        ],
+        "sample_references": [
+          "ref:7054",
+          "ref:7056",
+          "ref:91382"
+        ],
+        "anchor_id": "105-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 45,
+        "collections": 31,
+        "sample_occurrences": [
+          "occ:297299",
+          "occ:401688",
+          "occ:405527",
+          "occ:465496",
+          "occ:488653"
+        ],
+        "sample_references": [
+          "ref:10263",
+          "ref:13117",
+          "ref:17101",
+          "ref:24617",
+          "ref:7846"
+        ],
+        "anchor_id": "105-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 403,
+        "collections": 284,
+        "sample_occurrences": [
+          "occ:148500",
+          "occ:162544",
+          "occ:247238",
+          "occ:256525",
+          "occ:259321"
+        ],
+        "sample_references": [
+          "ref:13525",
+          "ref:14864",
+          "ref:6837",
+          "ref:6977",
+          "ref:78573"
+        ],
+        "anchor_id": "105-3",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 39,
+        "collections": 30,
+        "sample_occurrences": [
+          "occ:297798",
+          "occ:297799",
+          "occ:297800",
+          "occ:372644",
+          "occ:401745"
+        ],
+        "sample_references": [
+          "ref:29483",
+          "ref:61634",
+          "ref:76623",
+          "ref:9481"
+        ],
+        "anchor_id": "105-4",
+        "anchor_status": "hold_coast_or_shallow_water"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 214,
+        "collections": 152,
+        "sample_occurrences": [
+          "occ:150327",
+          "occ:150851",
+          "occ:343953",
+          "occ:457789",
+          "occ:457790"
+        ],
+        "sample_references": [
+          "ref:11745",
+          "ref:14425",
+          "ref:26795",
+          "ref:92750"
+        ],
+        "anchor_id": "105-9",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 16,
+        "collections": 15,
+        "sample_occurrences": [
+          "occ:512990",
+          "occ:528255",
+          "occ:534795",
+          "occ:567016",
+          "occ:586619"
+        ],
+        "sample_references": [
+          "ref:17002",
+          "ref:29189",
+          "ref:46182",
+          "ref:66120",
+          "ref:9804"
+        ],
+        "anchor_id": "105-8",
+        "anchor_status": "hold_coast_or_shallow_water"
+      }
+    ],
+    "90": [
+      {
+        "region": "AFR",
+        "name": "非洲",
+        "occurrences": 80,
+        "collections": 50,
+        "sample_occurrences": [
+          "occ:259972",
+          "occ:259976",
+          "occ:260589",
+          "occ:260828",
+          "occ:260830"
+        ],
+        "sample_references": [
+          "ref:45866",
+          "ref:7054",
+          "ref:7056",
+          "ref:91382"
+        ],
+        "anchor_id": "90-1",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "SOA",
+        "name": "南美洲",
+        "occurrences": 69,
+        "collections": 54,
+        "sample_occurrences": [
+          "occ:150847",
+          "occ:150848",
+          "occ:343959",
+          "occ:372803",
+          "occ:405527"
+        ],
+        "sample_references": [
+          "ref:24617",
+          "ref:34687",
+          "ref:6046",
+          "ref:6047",
+          "ref:9503"
+        ],
+        "anchor_id": "90-2",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "NOA",
+        "name": "北美洲",
+        "occurrences": 244,
+        "collections": 177,
+        "sample_occurrences": [
+          "occ:148500",
+          "occ:150138",
+          "occ:150139",
+          "occ:150156",
+          "occ:162544"
+        ],
+        "sample_references": [
+          "ref:14864",
+          "ref:4419",
+          "ref:4423",
+          "ref:78573"
+        ],
+        "anchor_id": "90-3",
+        "anchor_status": "hold_coast_or_shallow_water"
+      },
+      {
+        "region": "AUS",
+        "name": "澳大利亚",
+        "occurrences": 35,
+        "collections": 26,
+        "sample_occurrences": [
+          "occ:297798",
+          "occ:297799",
+          "occ:297800",
+          "occ:401745",
+          "occ:401747"
+        ],
+        "sample_references": [
+          "ref:29483",
+          "ref:61634",
+          "ref:76623"
+        ],
+        "anchor_id": "90-4",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "ASI",
+        "name": "亚洲主体",
+        "occurrences": 270,
+        "collections": 171,
+        "sample_occurrences": [
+          "occ:149987",
+          "occ:150327",
+          "occ:150851",
+          "occ:379791",
+          "occ:379964"
+        ],
+        "sample_references": [
+          "ref:14425",
+          "ref:4408",
+          "ref:92750",
+          "ref:9655",
+          "ref:9660"
+        ],
+        "anchor_id": "90-9",
+        "anchor_status": "candidate_approximate"
+      },
+      {
+        "region": "EUR",
+        "name": "欧洲",
+        "occurrences": 15,
+        "collections": 9,
+        "sample_occurrences": [
+          "occ:486494",
+          "occ:507603",
+          "occ:512990",
+          "occ:567016",
+          "occ:624158"
+        ],
+        "sample_references": [
+          "ref:13701",
+          "ref:14093",
+          "ref:19181",
+          "ref:66120",
+          "ref:9804"
+        ],
+        "anchor_id": "90-8",
+        "anchor_status": "hold_coast_or_shallow_water"
+      }
+    ]
+  }
+}

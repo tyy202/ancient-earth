@@ -34,6 +34,63 @@ const server = http.createServer((req, res) => {
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(origin);
       await page.locator('#loading').waitFor({state: 'hidden'});
+      assert.equal(await page.locator('#life-group').count(), 1, name + ': biology selector exists');
+      await page.selectOption('#life-group', 'dinosaurs');
+      await page.selectOption('#years-ago', '150');
+      assert(await page.locator('.globe-label--fossil').count() > 0, name + ': dinosaur regions');
+      assert.match(await page.locator('#life-status').textContent(), /155.*145/);
+      await page.locator('#toggle-labels').click();
+      assert(await page.locator('.globe-label--fossil').count() > 0, 'biology independent of geography toggle');
+      await page.locator('#toggle-labels').click();
+      for (const age of ['65','0','240','600']) {
+        await page.selectOption('#years-ago', age);
+        assert.equal(await page.locator('.globe-label--fossil').count(), 0, 'no dinosaur markers for ' + age);
+        assert((await page.locator('#life-status').textContent()).length > 0);
+      }
+      await page.selectOption('#life-group', 'none');
+      assert(await page.locator('.globe-label').count() > 0, name + ': era labels loaded');
+      await page.locator('#toggle-labels').click();
+      assert.equal(await page.locator('#globe-labels').isVisible(), false);
+      await page.selectOption('#years-ago', '0');
+      assert.equal(await page.locator('#globe-labels').isVisible(), false, 'era change preserves hidden labels');
+      await page.locator('#toggle-labels').click();
+      assert((await page.locator('#globe-labels').textContent()).includes('非洲'));
+      await page.selectOption('#years-ago', '280');
+      assert((await page.locator('#globe-labels').textContent()).includes('盘古大陆'));
+      assert(!(await page.locator('#globe-labels').textContent()).includes('大西洋'));
+      if (!mobile) {
+        const labelChecks = await page.evaluate(() => {
+          const host = document.createElement('div');
+          host.style.cssText = 'position:fixed;width:600px;height:600px;left:0;top:0';
+          document.body.appendChild(host);
+          const labels = new GlobeLabels(host);
+          GEOGRAPHY_LABELS.test = [
+            {name:'正面',kind:'continent',lon:-90,lat:0},
+            {name:'背面',kind:'continent',lon:90,lat:0},
+            {name:'重叠',kind:'ocean',lon:-90,lat:0}
+          ];
+          labels.setAge('test');
+          const sphere = new THREE.Mesh(new THREE.SphereGeometry(.5), new THREE.MeshBasicMaterial());
+          const camera = new THREE.PerspectiveCamera(45,1,.01,100);
+          camera.position.z = 2;
+          camera.updateMatrixWorld(); sphere.updateMatrixWorld();
+          labels.update(sphere,camera);
+          const visible = () => labels.items.filter(i => i.element.style.visibility === 'visible').map(i => i.element.textContent);
+          const front = visible();
+          sphere.rotation.y = Math.PI; sphere.updateMatrixWorld();
+          labels.update(sphere,camera);
+          const back = visible();
+          sphere.geometry.dispose(); sphere.material.dispose(); host.remove();
+          delete GEOGRAPHY_LABELS.test;
+          return {front,back};
+        });
+        assert.deepEqual(labelChecks, {front:['正面'],back:['背面']}, 'labels follow rotation, hide occluded hemisphere, avoid overlap');
+        const ages = await page.locator('#years-ago option').evaluateAll(options => options.map(o => o.value));
+        for (const age of ages) {
+          await page.selectOption('#years-ago', age);
+          assert(await page.locator('.globe-label').count() > 0, 'labels for age ' + age);
+        }
+      }
       const toggle = page.locator('#explanation-toggle');
       assert.equal(await toggle.isVisible(), mobile, name + ': separate mobile layout');
       await page.selectOption('#years-ago', '370');
@@ -44,7 +101,7 @@ const server = http.createServer((req, res) => {
         assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
         assert.equal(await page.locator('#explanation').isVisible(), true);
         await toggle.click();
-        for (const id of ['years-ago','jump-to','remove-clouds','stop-rotation','explanation-toggle']) {
+        for (const id of ['years-ago','jump-to','life-group','remove-clouds','stop-rotation','toggle-labels','explanation-toggle']) {
           const box = await page.locator('#' + id).boundingBox();
           assert(box.height >= 44, name + ': touch target ' + id);
         }
@@ -98,6 +155,17 @@ const server = http.createServer((req, res) => {
         assert(!before.equals(await canvas.screenshot()), 'desktop: mouse rotates');
         await page.keyboard.press('ArrowRight');
         assert.equal(await page.locator('#years-ago').inputValue(), '150');
+      }
+      await page.selectOption('#life-group', 'dinosaurs');
+      await page.selectOption('#years-ago', '150');
+      await page.waitForFunction(() => Array.from(document.querySelectorAll('.globe-label--fossil')).some(e => e.style.visibility === 'visible'));
+      const biologyGlobe = await canvas.boundingBox();
+      assert(biologyGlobe.height > 100, name + ': usable globe with biology status');
+      if (mobile) {
+        const panel = await page.locator('#controls').boundingBox();
+        const info = await page.locator('#info-panel').boundingBox();
+        assert(panel.y + panel.height <= biologyGlobe.y + 1 || panel.x >= biologyGlobe.x + biologyGlobe.width - 1);
+        assert(info.y >= biologyGlobe.y + biologyGlobe.height - 1 || info.x >= biologyGlobe.x + biologyGlobe.width - 1);
       }
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, name + ': no horizontal overflow');
       assert.deepEqual(errors, [], name + ': no JS errors');

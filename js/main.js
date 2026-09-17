@@ -49,6 +49,7 @@
   scene.add(light);
 
   var sphere;
+  var geographyLabels = new GlobeLabels(webglEl);
   var loadedCount = 0;
   var DEFAULT_YEAR = 600;
   var startingYear = DEFAULT_YEAR;
@@ -112,6 +113,7 @@
 
     requestAnimationFrame(render);
     renderer.render(scene, camera);
+    geographyLabels.update(sphere, camera);
   }
 
   function preloadTextures() {
@@ -125,6 +127,24 @@
     document.getElementById('how-long-ago').textContent = yearsago.options[yearsago.selectedIndex].text;
     document.getElementById('explanation').innerHTML = EXPLAIN_MAP[parseInt(howmany)];
     document.getElementById('explanation').scrollTop = 0;
+    updateLifeDescription(howmany);
+  }
+
+  function updateLifeDescription(age) {
+    var status = document.getElementById('life-status');
+    var selected = document.getElementById('life-group').value === 'dinosaurs';
+    status.hidden = !selected;
+    if (!selected) return;
+    var data = DINOSAUR_DATA[age];
+    if (data && data.labels.length) {
+      status.textContent = '◆ 恐龙化石：' + data.older_ma + '—' + data.younger_ma + ' 百万年前 · 区域示意';
+    } else {
+      status.textContent = age < 66 ? '非鸟类恐龙已于约 6600 万年前灭绝' : '该年代不在本版恐龙化石展示范围内';
+    }
+    var detail = document.createElement('p');
+    detail.className = 'life-detail';
+    detail.textContent = '恐龙指非鸟类恐龙。橙色标记按现代大陆归类，放在该大陆对应的古陆块附近，表示所选年代范围内有化石记录，不是化石原址或完整栖息范围。没有标记不代表当时没有恐龙。数据：PBDB（CC BY 4.0），本地保存。';
+    document.getElementById('explanation').appendChild(detail);
   }
 
   function onYearsAgoChanged() {
@@ -139,6 +159,7 @@
     sphere = createSphere(radius, segments, img);
     sphere.rotation.y = rotation;
     scene.add(sphere);
+    geographyLabels.setAge(howmany);
 
     updateSelectWithValue(howmany);
     window.location.replace('#' + howmany);
@@ -207,6 +228,19 @@
   }
 
   function setupControls() {
+    var labelsToggle = document.getElementById('toggle-labels');
+    labelsToggle.onclick = function() {
+      var hidden = geographyLabels.showGeography;
+      geographyLabels.showGeography = !hidden;
+      geographyLabels.refresh();
+      labelsToggle.textContent = hidden ? '显示地名' : '隐藏地名';
+      labelsToggle.setAttribute('aria-pressed', String(hidden));
+    };
+    document.getElementById('life-group').onchange = function() {
+      geographyLabels.lifeGroup = this.value;
+      geographyLabels.refresh();
+      updateSelectWithValue(parseInt(yearsago.value));
+    };
     var cloudsHidden = false;
     var removeCloudsElt = document.getElementById('remove-clouds');
     removeCloudsElt.onclick = function() {

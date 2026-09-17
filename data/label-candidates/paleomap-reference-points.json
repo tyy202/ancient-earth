@@ -1,0 +1,3989 @@
+{
+  "schema_version": 1,
+  "status": "research_candidates_not_production",
+  "model": "PALEOMAP",
+  "anchor_plate_id": 0,
+  "checked_on": "2026-09-17",
+  "coordinate_order": "longitude, latitude; degrees",
+  "source": "https://gwsdoc.gplates.org/reconstruction/reconstruct-points/",
+  "model_source": "https://zenodo.org/records/10251792",
+  "model_license": "CC-BY-4.0 (Zenodo record metadata)",
+  "attribution": "Christopher R. Scotese, PALEOMAP PaleoAtlas for GPlates, v3 (2016); reconstruction via GPlates Web Service, University of Sydney.",
+  "notes": [
+    "Seeds are manually selected modern reference locations, not supplied ancient placenames.",
+    "Every texture was visually compared at overview scale; no positional accuracy guarantee.",
+    "Conservative hold: pixel B > 1.15*R and G > 1.08*R. This is only a color heuristic, not proof of geological mismatch.",
+    "Submerged continental locations can be geologically valid; held points are retained for later review, not moved onto nearby land.",
+    "Do not display these names as ancient cities, countries or the boundaries of entire continents.",
+    "No manual shifts or invented paleocoordinates."
+  ],
+  "reference_points": [
+    {
+      "id": 1,
+      "name_zh": "今非洲中部",
+      "name_en": "Africa",
+      "lon": 20,
+      "lat": 5
+    },
+    {
+      "id": 2,
+      "name_zh": "今南美洲中部",
+      "name_en": "South America",
+      "lon": -60,
+      "lat": -10
+    },
+    {
+      "id": 3,
+      "name_zh": "今北美洲中部",
+      "name_en": "North America",
+      "lon": -100,
+      "lat": 45
+    },
+    {
+      "id": 4,
+      "name_zh": "今澳大利亚中部",
+      "name_en": "Australia",
+      "lon": 135,
+      "lat": -25
+    },
+    {
+      "id": 5,
+      "name_zh": "今南极洲东部",
+      "name_en": "Antarctica",
+      "lon": 40,
+      "lat": -80
+    },
+    {
+      "id": 6,
+      "name_zh": "今印度一带",
+      "name_en": "India",
+      "lon": 78,
+      "lat": 23
+    },
+    {
+      "id": 7,
+      "name_zh": "今西伯利亚一带",
+      "name_en": "Siberia",
+      "lon": 105,
+      "lat": 60
+    },
+    {
+      "id": 8,
+      "name_zh": "今欧洲中部",
+      "name_en": "Europe",
+      "lon": 20,
+      "lat": 52
+    },
+    {
+      "id": 9,
+      "name_zh": "今中国南部一带",
+      "name_en": "South China",
+      "lon": 110,
+      "lat": 25
+    }
+  ],
+  "per_age": [
+    {
+      "age_ma": 600,
+      "atlas_same_age": true,
+      "candidate_count": 9,
+      "held_count": 0
+    },
+    {
+      "age_ma": 560,
+      "atlas_same_age": false,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 540,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 500,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 470,
+      "atlas_same_age": true,
+      "candidate_count": 6,
+      "held_count": 3
+    },
+    {
+      "age_ma": 450,
+      "atlas_same_age": true,
+      "candidate_count": 6,
+      "held_count": 3
+    },
+    {
+      "age_ma": 430,
+      "atlas_same_age": true,
+      "candidate_count": 6,
+      "held_count": 3
+    },
+    {
+      "age_ma": 400,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 370,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 340,
+      "atlas_same_age": true,
+      "candidate_count": 5,
+      "held_count": 4
+    },
+    {
+      "age_ma": 300,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 280,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 260,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 240,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 220,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 200,
+      "atlas_same_age": true,
+      "candidate_count": 7,
+      "held_count": 2
+    },
+    {
+      "age_ma": 170,
+      "atlas_same_age": true,
+      "candidate_count": 9,
+      "held_count": 0
+    },
+    {
+      "age_ma": 150,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 120,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 105,
+      "atlas_same_age": true,
+      "candidate_count": 6,
+      "held_count": 3
+    },
+    {
+      "age_ma": 90,
+      "atlas_same_age": true,
+      "candidate_count": 6,
+      "held_count": 3
+    },
+    {
+      "age_ma": 65,
+      "atlas_same_age": false,
+      "candidate_count": 9,
+      "held_count": 0
+    },
+    {
+      "age_ma": 50,
+      "atlas_same_age": true,
+      "candidate_count": 8,
+      "held_count": 1
+    },
+    {
+      "age_ma": 35,
+      "atlas_same_age": true,
+      "candidate_count": 9,
+      "held_count": 0
+    },
+    {
+      "age_ma": 20,
+      "atlas_same_age": true,
+      "candidate_count": 9,
+      "held_count": 0
+    },
+    {
+      "age_ma": 0,
+      "atlas_same_age": true,
+      "candidate_count": 9,
+      "held_count": 0
+    }
+  ],
+  "labels": [
+    {
+      "id": "600-1",
+      "age_ma": 600,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 143.1334,
+      "lat": -29.7996,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        170,
+        151,
+        134
+      ]
+    },
+    {
+      "id": "600-2",
+      "age_ma": 600,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": 154.8811,
+      "lat": -62.1374,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        252,
+        252,
+        252
+      ]
+    },
+    {
+      "id": "600-3",
+      "age_ma": 600,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -131.5425,
+      "lat": -57.2641,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        156,
+        137,
+        122
+      ]
+    },
+    {
+      "id": "600-4",
+      "age_ma": 600,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": -170.3435,
+      "lat": 22.9819,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        173,
+        154,
+        139
+      ]
+    },
+    {
+      "id": "600-5",
+      "age_ma": 600,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 179.6967,
+      "lat": -10.8981,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        182,
+        163,
+        148
+      ]
+    },
+    {
+      "id": "600-6",
+      "age_ma": 600,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 160.1982,
+      "lat": -1.6645,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        164,
+        145,
+        130
+      ]
+    },
+    {
+      "id": "600-7",
+      "age_ma": 600,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 2.3697,
+      "lat": -35.9916,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        163,
+        144,
+        129
+      ]
+    },
+    {
+      "id": "600-8",
+      "age_ma": 600,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -10.5587,
+      "lat": -73.7591,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        248,
+        248,
+        250
+      ]
+    },
+    {
+      "id": "600-9",
+      "age_ma": 600,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 158.5198,
+      "lat": 46.938,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        172,
+        153,
+        138
+      ]
+    },
+    {
+      "id": "560-1",
+      "age_ma": 560,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 154.7501,
+      "lat": -38.8773,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        175,
+        156,
+        142
+      ]
+    },
+    {
+      "id": "560-2",
+      "age_ma": 560,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -178.3702,
+      "lat": -68.7822,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        175,
+        158,
+        142
+      ]
+    },
+    {
+      "id": "560-3",
+      "age_ma": 560,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -105.6229,
+      "lat": -44.089,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        169,
+        150,
+        133
+      ]
+    },
+    {
+      "id": "560-4",
+      "age_ma": 560,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": -167.1321,
+      "lat": 20.3732,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        147,
+        124,
+        106
+      ]
+    },
+    {
+      "id": "560-5",
+      "age_ma": 560,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": -170.5281,
+      "lat": -14.7242,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        174,
+        157,
+        141
+      ]
+    },
+    {
+      "id": "560-6",
+      "age_ma": 560,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 168.3997,
+      "lat": -8.8031,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        184,
+        166,
+        146
+      ]
+    },
+    {
+      "id": "560-7",
+      "age_ma": 560,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 0.1538,
+      "lat": -26.4942,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        169,
+        150,
+        133
+      ]
+    },
+    {
+      "id": "560-8",
+      "age_ma": 560,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -27.3581,
+      "lat": -62.9978,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        60,
+        185,
+        217
+      ]
+    },
+    {
+      "id": "560-9",
+      "age_ma": 560,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 158.9079,
+      "lat": 39.014,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        188,
+        169,
+        154
+      ]
+    },
+    {
+      "id": "540-1",
+      "age_ma": 540,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 162.7867,
+      "lat": -42.8542,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        164,
+        151,
+        135
+      ]
+    },
+    {
+      "id": "540-2",
+      "age_ma": 540,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -156.9228,
+      "lat": -68.7804,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        168,
+        155,
+        139
+      ]
+    },
+    {
+      "id": "540-3",
+      "age_ma": 540,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -96.8488,
+      "lat": -29.9456,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        173,
+        155,
+        131
+      ]
+    },
+    {
+      "id": "540-4",
+      "age_ma": 540,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": -166.9532,
+      "lat": 20.4507,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        169,
+        156,
+        139
+      ]
+    },
+    {
+      "id": "540-5",
+      "age_ma": 540,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": -165.7813,
+      "lat": -14.7863,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        181,
+        169,
+        153
+      ]
+    },
+    {
+      "id": "540-6",
+      "age_ma": 540,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 172.4466,
+      "lat": -11.4855,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        194,
+        178,
+        163
+      ]
+    },
+    {
+      "id": "540-7",
+      "age_ma": 540,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": -2.6928,
+      "lat": -19.4848,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        191,
+        174,
+        156
+      ]
+    },
+    {
+      "id": "540-8",
+      "age_ma": 540,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -33.9514,
+      "lat": -54.6633,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        51,
+        180,
+        211
+      ]
+    },
+    {
+      "id": "540-9",
+      "age_ma": 540,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 157.2847,
+      "lat": 34.9682,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        163,
+        150,
+        131
+      ]
+    },
+    {
+      "id": "500-1",
+      "age_ma": 500,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 173.5153,
+      "lat": -48.5632,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        149,
+        136,
+        120
+      ]
+    },
+    {
+      "id": "500-2",
+      "age_ma": 500,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -130.5983,
+      "lat": -62.6946,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        171,
+        155,
+        139
+      ]
+    },
+    {
+      "id": "500-3",
+      "age_ma": 500,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -83.8651,
+      "lat": -13.4763,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        123,
+        241,
+        255
+      ]
+    },
+    {
+      "id": "500-4",
+      "age_ma": 500,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": -174.8025,
+      "lat": 19.8107,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        192,
+        176,
+        161
+      ]
+    },
+    {
+      "id": "500-5",
+      "age_ma": 500,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": -164.7829,
+      "lat": -14.0388,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        172,
+        159,
+        143
+      ]
+    },
+    {
+      "id": "500-6",
+      "age_ma": 500,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 173.097,
+      "lat": -16.0925,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        197,
+        183,
+        170
+      ]
+    },
+    {
+      "id": "500-7",
+      "age_ma": 500,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 3.1496,
+      "lat": -5.7506,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        164,
+        158,
+        134
+      ]
+    },
+    {
+      "id": "500-8",
+      "age_ma": 500,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -28.0569,
+      "lat": -46.876,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        64,
+        185,
+        214
+      ]
+    },
+    {
+      "id": "500-9",
+      "age_ma": 500,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 148.1319,
+      "lat": 26.0353,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        195,
+        179,
+        164
+      ]
+    },
+    {
+      "id": "470-1",
+      "age_ma": 470,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 172.7081,
+      "lat": -52.9057,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        159,
+        151,
+        128
+      ]
+    },
+    {
+      "id": "470-2",
+      "age_ma": 470,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -127.9402,
+      "lat": -57.0006,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        205,
+        202,
+        197
+      ]
+    },
+    {
+      "id": "470-3",
+      "age_ma": 470,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -71.8793,
+      "lat": -14.6699,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        122,
+        243,
+        254
+      ]
+    },
+    {
+      "id": "470-4",
+      "age_ma": 470,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 169.6699,
+      "lat": 16.2111,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        150,
+        175,
+        156
+      ]
+    },
+    {
+      "id": "470-5",
+      "age_ma": 470,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": -174.4465,
+      "lat": -15.3662,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        204,
+        186,
+        164
+      ]
+    },
+    {
+      "id": "470-6",
+      "age_ma": 470,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 163.7839,
+      "lat": -21.1671,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        198,
+        177,
+        156
+      ]
+    },
+    {
+      "id": "470-7",
+      "age_ma": 470,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 14.0368,
+      "lat": 4.6667,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        155,
+        147,
+        124
+      ]
+    },
+    {
+      "id": "470-8",
+      "age_ma": 470,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -8.7982,
+      "lat": -44.4582,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        48,
+        148,
+        182
+      ]
+    },
+    {
+      "id": "470-9",
+      "age_ma": 470,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 133.5146,
+      "lat": 17.3582,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        98,
+        213,
+        232
+      ]
+    },
+    {
+      "id": "450-1",
+      "age_ma": 450,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 173.2417,
+      "lat": -55.8089,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        167,
+        155,
+        129
+      ]
+    },
+    {
+      "id": "450-2",
+      "age_ma": 450,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -127.9921,
+      "lat": -53.0964,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        166,
+        152,
+        125
+      ]
+    },
+    {
+      "id": "450-3",
+      "age_ma": 450,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -63.9596,
+      "lat": -13.3039,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        143,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "450-4",
+      "age_ma": 450,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 159.9572,
+      "lat": 12.4548,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        171,
+        149,
+        135
+      ]
+    },
+    {
+      "id": "450-5",
+      "age_ma": 450,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 179.2709,
+      "lat": -17.1932,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        206,
+        185,
+        164
+      ]
+    },
+    {
+      "id": "450-6",
+      "age_ma": 450,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 157.9291,
+      "lat": -25.315,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        197,
+        179,
+        155
+      ]
+    },
+    {
+      "id": "450-7",
+      "age_ma": 450,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 13.2689,
+      "lat": 15.1145,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        163,
+        152,
+        130
+      ]
+    },
+    {
+      "id": "450-8",
+      "age_ma": 450,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -1.2081,
+      "lat": -37.2746,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        137,
+        161,
+        161
+      ]
+    },
+    {
+      "id": "450-9",
+      "age_ma": 450,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 124.6505,
+      "lat": 10.9259,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        79,
+        190,
+        220
+      ]
+    },
+    {
+      "id": "430-1",
+      "age_ma": 430,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 164.4441,
+      "lat": -65.9735,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        125,
+        124,
+        96
+      ]
+    },
+    {
+      "id": "430-2",
+      "age_ma": 430,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -117.3389,
+      "lat": -60.58,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        72,
+        187,
+        214
+      ]
+    },
+    {
+      "id": "430-3",
+      "age_ma": 430,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -56.8548,
+      "lat": -14.376,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        123,
+        238,
+        241
+      ]
+    },
+    {
+      "id": "430-4",
+      "age_ma": 430,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 159.1131,
+      "lat": 3.0853,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        164,
+        153,
+        123
+      ]
+    },
+    {
+      "id": "430-5",
+      "age_ma": 430,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 176.6958,
+      "lat": -27.8404,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        128,
+        127,
+        99
+      ]
+    },
+    {
+      "id": "430-6",
+      "age_ma": 430,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 152.7344,
+      "lat": -34.2562,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        128,
+        127,
+        99
+      ]
+    },
+    {
+      "id": "430-7",
+      "age_ma": 430,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": -2.3278,
+      "lat": 29.7968,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        169,
+        160,
+        131
+      ]
+    },
+    {
+      "id": "430-8",
+      "age_ma": 430,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": -0.8181,
+      "lat": -21.1469,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        104,
+        226,
+        247
+      ]
+    },
+    {
+      "id": "430-9",
+      "age_ma": 430,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 124.5639,
+      "lat": 6.4314,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        132,
+        123,
+        90
+      ]
+    },
+    {
+      "id": "400-1",
+      "age_ma": 400,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 94.4163,
+      "lat": -75.6541,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        125,
+        124,
+        96
+      ]
+    },
+    {
+      "id": "400-2",
+      "age_ma": 400,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -65.8554,
+      "lat": -70.6078,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        15,
+        156,
+        201
+      ]
+    },
+    {
+      "id": "400-3",
+      "age_ma": 400,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -41.3408,
+      "lat": -32.8766,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        147,
+        131,
+        106
+      ]
+    },
+    {
+      "id": "400-4",
+      "age_ma": 400,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 157.6259,
+      "lat": -14.8124,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        168,
+        159,
+        130
+      ]
+    },
+    {
+      "id": "400-5",
+      "age_ma": 400,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 167.7923,
+      "lat": -49.0688,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        129,
+        127,
+        102
+      ]
+    },
+    {
+      "id": "400-6",
+      "age_ma": 400,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 135.2695,
+      "lat": -47.8061,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        128,
+        120,
+        99
+      ]
+    },
+    {
+      "id": "400-7",
+      "age_ma": 400,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 3.4782,
+      "lat": 32.596,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        167,
+        158,
+        129
+      ]
+    },
+    {
+      "id": "400-8",
+      "age_ma": 400,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 14.3436,
+      "lat": -19.8076,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        132,
+        126,
+        104
+      ]
+    },
+    {
+      "id": "400-9",
+      "age_ma": 400,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 126.0926,
+      "lat": 0.159,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        121,
+        221,
+        221
+      ]
+    },
+    {
+      "id": "370-1",
+      "age_ma": 370,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 40.8622,
+      "lat": -63.0613,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        126,
+        125,
+        95
+      ]
+    },
+    {
+      "id": "370-2",
+      "age_ma": 370,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -43.5517,
+      "lat": -66.7336,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        18,
+        159,
+        202
+      ]
+    },
+    {
+      "id": "370-3",
+      "age_ma": 370,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -41.0792,
+      "lat": -22.4779,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        116,
+        247,
+        255
+      ]
+    },
+    {
+      "id": "370-4",
+      "age_ma": 370,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 131.1322,
+      "lat": -23.649,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        178,
+        159,
+        119
+      ]
+    },
+    {
+      "id": "370-5",
+      "age_ma": 370,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 126.9567,
+      "lat": -58.7795,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        126,
+        125,
+        97
+      ]
+    },
+    {
+      "id": "370-6",
+      "age_ma": 370,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 94.791,
+      "lat": -48.3847,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        123,
+        121,
+        96
+      ]
+    },
+    {
+      "id": "370-7",
+      "age_ma": 370,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 8.6269,
+      "lat": 37.4471,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        123,
+        133,
+        98
+      ]
+    },
+    {
+      "id": "370-8",
+      "age_ma": 370,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 11.6652,
+      "lat": -12.6193,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        179,
+        188,
+        157
+      ]
+    },
+    {
+      "id": "370-9",
+      "age_ma": 370,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 104.6298,
+      "lat": -0.51,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        154,
+        146,
+        125
+      ]
+    },
+    {
+      "id": "340-1",
+      "age_ma": 340,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 8.8448,
+      "lat": -56.8657,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        101,
+        66
+      ]
+    },
+    {
+      "id": "340-2",
+      "age_ma": 340,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -45.2274,
+      "lat": -47.9116,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        61,
+        185,
+        213
+      ]
+    },
+    {
+      "id": "340-3",
+      "age_ma": 340,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -37.2835,
+      "lat": -5.0313,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        98,
+        220,
+        235
+      ]
+    },
+    {
+      "id": "340-4",
+      "age_ma": 340,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 130.1932,
+      "lat": -42.4698,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        143,
+        138,
+        98
+      ]
+    },
+    {
+      "id": "340-5",
+      "age_ma": 340,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 117.6764,
+      "lat": -77.3425,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        243,
+        243,
+        245
+      ]
+    },
+    {
+      "id": "340-6",
+      "age_ma": 340,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 74.0869,
+      "lat": -61.076,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        86,
+        107,
+        68
+      ]
+    },
+    {
+      "id": "340-7",
+      "age_ma": 340,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 21.0223,
+      "lat": 43.9019,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        106,
+        122,
+        83
+      ]
+    },
+    {
+      "id": "340-8",
+      "age_ma": 340,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 13.8627,
+      "lat": -3.847,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        126,
+        218,
+        213
+      ]
+    },
+    {
+      "id": "340-9",
+      "age_ma": 340,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 96.9318,
+      "lat": -11.7817,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        90,
+        222,
+        235
+      ]
+    },
+    {
+      "id": "300-1",
+      "age_ma": 300,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 2.4921,
+      "lat": -46.2497,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        143,
+        137,
+        101
+      ]
+    },
+    {
+      "id": "300-2",
+      "age_ma": 300,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -36.9896,
+      "lat": -32.1729,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        149,
+        135,
+        108
+      ]
+    },
+    {
+      "id": "300-3",
+      "age_ma": 300,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -26.758,
+      "lat": 5.2039,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        118,
+        245,
+        252
+      ]
+    },
+    {
+      "id": "300-4",
+      "age_ma": 300,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 137.5782,
+      "lat": -58.1841,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        251,
+        251,
+        253
+      ]
+    },
+    {
+      "id": "300-5",
+      "age_ma": 300,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 5.3131,
+      "lat": -85.1308,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        242,
+        242,
+        244
+      ]
+    },
+    {
+      "id": "300-6",
+      "age_ma": 300,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 51.9755,
+      "lat": -65.4867,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        249,
+        249,
+        249
+      ]
+    },
+    {
+      "id": "300-7",
+      "age_ma": 300,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 43.7781,
+      "lat": 50.4514,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        91,
+        102,
+        68
+      ]
+    },
+    {
+      "id": "300-8",
+      "age_ma": 300,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 24.519,
+      "lat": 7.0298,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        120,
+        181,
+        163
+      ]
+    },
+    {
+      "id": "300-9",
+      "age_ma": 300,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 99.941,
+      "lat": -9.1639,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        106,
+        115,
+        86
+      ]
+    },
+    {
+      "id": "280-1",
+      "age_ma": 280,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 6.3326,
+      "lat": -38.5757,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        91,
+        105,
+        69
+      ]
+    },
+    {
+      "id": "280-2",
+      "age_ma": 280,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -30.7779,
+      "lat": -26.5491,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        192,
+        161,
+        132
+      ]
+    },
+    {
+      "id": "280-3",
+      "age_ma": 280,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -23.5556,
+      "lat": 11.9418,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        168,
+        211,
+        202
+      ]
+    },
+    {
+      "id": "280-4",
+      "age_ma": 280,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 129.6044,
+      "lat": -62.5514,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        251,
+        251,
+        253
+      ]
+    },
+    {
+      "id": "280-5",
+      "age_ma": 280,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 9.9832,
+      "lat": -77.4318,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        223,
+        222,
+        227
+      ]
+    },
+    {
+      "id": "280-6",
+      "age_ma": 280,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 45.7616,
+      "lat": -59.5283,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        71,
+        91,
+        64
+      ]
+    },
+    {
+      "id": "280-7",
+      "age_ma": 280,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 54.7855,
+      "lat": 52.9827,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        71,
+        87,
+        60
+      ]
+    },
+    {
+      "id": "280-8",
+      "age_ma": 280,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 28.7953,
+      "lat": 13.4977,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        171,
+        163,
+        126
+      ]
+    },
+    {
+      "id": "280-9",
+      "age_ma": 280,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 99.0043,
+      "lat": -8.4839,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        129,
+        143,
+        130
+      ]
+    },
+    {
+      "id": "260-1",
+      "age_ma": 260,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 9.6798,
+      "lat": -34.2977,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        114,
+        118,
+        81
+      ]
+    },
+    {
+      "id": "260-2",
+      "age_ma": 260,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -27.5615,
+      "lat": -25.5562,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        190,
+        164,
+        129
+      ]
+    },
+    {
+      "id": "260-3",
+      "age_ma": 260,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -23.8589,
+      "lat": 13.9,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        191,
+        160,
+        129
+      ]
+    },
+    {
+      "id": "260-4",
+      "age_ma": 260,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 119.5482,
+      "lat": -60.8816,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        250,
+        250,
+        250
+      ]
+    },
+    {
+      "id": "260-5",
+      "age_ma": 260,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 22.8414,
+      "lat": -72.5888,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        248,
+        248,
+        250
+      ]
+    },
+    {
+      "id": "260-6",
+      "age_ma": 260,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 46.8913,
+      "lat": -53.6967,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        66,
+        91,
+        62
+      ]
+    },
+    {
+      "id": "260-7",
+      "age_ma": 260,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 58.2007,
+      "lat": 57.1581,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        98,
+        56
+      ]
+    },
+    {
+      "id": "260-8",
+      "age_ma": 260,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 29.1768,
+      "lat": 18.0243,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        176,
+        159,
+        129
+      ]
+    },
+    {
+      "id": "260-9",
+      "age_ma": 260,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 101.67,
+      "lat": 0.9932,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        98,
+        198,
+        222
+      ]
+    },
+    {
+      "id": "240-1",
+      "age_ma": 240,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 13.9959,
+      "lat": -33.2517,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        187,
+        169,
+        131
+      ]
+    },
+    {
+      "id": "240-2",
+      "age_ma": 240,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -25.7109,
+      "lat": -32.1152,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        194,
+        169,
+        129
+      ]
+    },
+    {
+      "id": "240-3",
+      "age_ma": 240,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -28.8503,
+      "lat": 7.8817,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        187,
+        163,
+        125
+      ]
+    },
+    {
+      "id": "240-4",
+      "age_ma": 240,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 110.5579,
+      "lat": -49.6033,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        67,
+        82,
+        59
+      ]
+    },
+    {
+      "id": "240-5",
+      "age_ma": 240,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 47.7387,
+      "lat": -66.7381,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        64,
+        87,
+        59
+      ]
+    },
+    {
+      "id": "240-6",
+      "age_ma": 240,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 53.4525,
+      "lat": -45.5068,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        136,
+        141,
+        100
+      ]
+    },
+    {
+      "id": "240-7",
+      "age_ma": 240,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 42.1881,
+      "lat": 63.8098,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        64,
+        88,
+        54
+      ]
+    },
+    {
+      "id": "240-8",
+      "age_ma": 240,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 22.2805,
+      "lat": 21.0469,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        112,
+        165,
+        145
+      ]
+    },
+    {
+      "id": "240-9",
+      "age_ma": 240,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 98.4162,
+      "lat": 18.5139,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        92,
+        207,
+        228
+      ]
+    },
+    {
+      "id": "220-1",
+      "age_ma": 220,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 7.5447,
+      "lat": -16.4556,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        195,
+        169,
+        132
+      ]
+    },
+    {
+      "id": "220-2",
+      "age_ma": 220,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -27.3104,
+      "lat": -19.9549,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        196,
+        170,
+        133
+      ]
+    },
+    {
+      "id": "220-3",
+      "age_ma": 220,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -39.0179,
+      "lat": 18.9792,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        218,
+        195,
+        154
+      ]
+    },
+    {
+      "id": "220-4",
+      "age_ma": 220,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 84.3958,
+      "lat": -46.4975,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        64,
+        82,
+        56
+      ]
+    },
+    {
+      "id": "220-5",
+      "age_ma": 220,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 30.1608,
+      "lat": -50.8757,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        65,
+        85,
+        58
+      ]
+    },
+    {
+      "id": "220-6",
+      "age_ma": 220,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 39.6171,
+      "lat": -30.6156,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        85,
+        94,
+        67
+      ]
+    },
+    {
+      "id": "220-7",
+      "age_ma": 220,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 65.0327,
+      "lat": 76.5269,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        123,
+        119,
+        82
+      ]
+    },
+    {
+      "id": "220-8",
+      "age_ma": 220,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 15.9158,
+      "lat": 37.1865,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        137,
+        132,
+        102
+      ]
+    },
+    {
+      "id": "220-9",
+      "age_ma": 220,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 99.992,
+      "lat": 29.2249,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        0,
+        97,
+        140
+      ]
+    },
+    {
+      "id": "200-1",
+      "age_ma": 200,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 7.2932,
+      "lat": -8.934,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        140,
+        135,
+        97
+      ]
+    },
+    {
+      "id": "200-2",
+      "age_ma": 200,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -26.2625,
+      "lat": -13.9296,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        140,
+        137,
+        96
+      ]
+    },
+    {
+      "id": "200-3",
+      "age_ma": 200,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -41.2834,
+      "lat": 24.428,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        215,
+        187,
+        150
+      ]
+    },
+    {
+      "id": "200-4",
+      "age_ma": 200,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 77.4439,
+      "lat": -44.1016,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        156,
+        142,
+        103
+      ]
+    },
+    {
+      "id": "200-5",
+      "age_ma": 200,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 27.5329,
+      "lat": -44.1585,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        141,
+        138,
+        97
+      ]
+    },
+    {
+      "id": "200-6",
+      "age_ma": 200,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 37.6717,
+      "lat": -24.3712,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        149,
+        144,
+        102
+      ]
+    },
+    {
+      "id": "200-7",
+      "age_ma": 200,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 95.1072,
+      "lat": 77.6348,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        65,
+        90,
+        61
+      ]
+    },
+    {
+      "id": "200-8",
+      "age_ma": 200,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 17.2337,
+      "lat": 43.8605,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        124,
+        202,
+        214
+      ]
+    },
+    {
+      "id": "200-9",
+      "age_ma": 200,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 113.3212,
+      "lat": 34.9441,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        113,
+        247,
+        238
+      ]
+    },
+    {
+      "id": "170-1",
+      "age_ma": 170,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 6.8351,
+      "lat": -7.1954,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        52,
+        74,
+        51
+      ]
+    },
+    {
+      "id": "170-2",
+      "age_ma": 170,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -26.6921,
+      "lat": -7.8414,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        96,
+        110,
+        75
+      ]
+    },
+    {
+      "id": "170-3",
+      "age_ma": 170,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -40.052,
+      "lat": 34.5611,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        182,
+        195,
+        167
+      ]
+    },
+    {
+      "id": "170-4",
+      "age_ma": 170,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 76.13,
+      "lat": -51.991,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        122,
+        137,
+        96
+      ]
+    },
+    {
+      "id": "170-5",
+      "age_ma": 170,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 20.8987,
+      "lat": -47.174,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        68,
+        89,
+        58
+      ]
+    },
+    {
+      "id": "170-6",
+      "age_ma": 170,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 35.4417,
+      "lat": -28.9444,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        137,
+        134,
+        99
+      ]
+    },
+    {
+      "id": "170-7",
+      "age_ma": 170,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 99.5364,
+      "lat": 66.184,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        72,
+        91,
+        63
+      ]
+    },
+    {
+      "id": "170-8",
+      "age_ma": 170,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 26.6019,
+      "lat": 42.8712,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        99,
+        105,
+        69
+      ]
+    },
+    {
+      "id": "170-9",
+      "age_ma": 170,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 116.4918,
+      "lat": 27.2723,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        170,
+        149,
+        120
+      ]
+    },
+    {
+      "id": "150-1",
+      "age_ma": 150,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 6.9375,
+      "lat": -8.2939,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        120,
+        132,
+        94
+      ]
+    },
+    {
+      "id": "150-2",
+      "age_ma": 150,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -26.6644,
+      "lat": -8.3792,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        83,
+        109,
+        70
+      ]
+    },
+    {
+      "id": "150-3",
+      "age_ma": 150,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -47.3308,
+      "lat": 40.2635,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        132,
+        139,
+        98
+      ]
+    },
+    {
+      "id": "150-4",
+      "age_ma": 150,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 82.0162,
+      "lat": -60.1113,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        97,
+        61
+      ]
+    },
+    {
+      "id": "150-5",
+      "age_ma": 150,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 16.3311,
+      "lat": -53.1104,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        83,
+        98,
+        59
+      ]
+    },
+    {
+      "id": "150-6",
+      "age_ma": 150,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 35.3715,
+      "lat": -35.3072,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        80,
+        94,
+        59
+      ]
+    },
+    {
+      "id": "150-7",
+      "age_ma": 150,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 100.8546,
+      "lat": 62.8323,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        101,
+        121,
+        93
+      ]
+    },
+    {
+      "id": "150-8",
+      "age_ma": 150,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 26.0792,
+      "lat": 44.5171,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        106,
+        196,
+        187
+      ]
+    },
+    {
+      "id": "150-9",
+      "age_ma": 150,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 114.8386,
+      "lat": 24.6093,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        161,
+        167,
+        131
+      ]
+    },
+    {
+      "id": "120-1",
+      "age_ma": 120,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 8.5645,
+      "lat": -11.828,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        85,
+        113,
+        73
+      ]
+    },
+    {
+      "id": "120-2",
+      "age_ma": 120,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -27.4493,
+      "lat": -10.7254,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        84,
+        110,
+        73
+      ]
+    },
+    {
+      "id": "120-3",
+      "age_ma": 120,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -49.0681,
+      "lat": 43.2665,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        84,
+        110,
+        73
+      ]
+    },
+    {
+      "id": "120-4",
+      "age_ma": 120,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 105.1441,
+      "lat": -62.0167,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        76,
+        96,
+        61
+      ]
+    },
+    {
+      "id": "120-5",
+      "age_ma": 120,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 19.5352,
+      "lat": -65.178,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        97,
+        60
+      ]
+    },
+    {
+      "id": "120-6",
+      "age_ma": 120,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 40.4469,
+      "lat": -43.6566,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        115,
+        145,
+        119
+      ]
+    },
+    {
+      "id": "120-7",
+      "age_ma": 120,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 98.0027,
+      "lat": 60.9196,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        67,
+        92,
+        52
+      ]
+    },
+    {
+      "id": "120-8",
+      "age_ma": 120,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 27.6681,
+      "lat": 42.3126,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        102,
+        244,
+        255
+      ]
+    },
+    {
+      "id": "120-9",
+      "age_ma": 120,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 117.1522,
+      "lat": 26.029,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        66,
+        85,
+        53
+      ]
+    },
+    {
+      "id": "105-1",
+      "age_ma": 105,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 9.9666,
+      "lat": -13.5074,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        110,
+        66
+      ]
+    },
+    {
+      "id": "105-2",
+      "age_ma": 105,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -32.4381,
+      "lat": -15.7615,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        79,
+        105,
+        68
+      ]
+    },
+    {
+      "id": "105-3",
+      "age_ma": 105,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -56.5568,
+      "lat": 43.1075,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        78,
+        104,
+        67
+      ]
+    },
+    {
+      "id": "105-4",
+      "age_ma": 105,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 116.175,
+      "lat": -55.7044,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        22,
+        164,
+        204
+      ]
+    },
+    {
+      "id": "105-5",
+      "age_ma": 105,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 38.0539,
+      "lat": -70.1979,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        83,
+        99,
+        62
+      ]
+    },
+    {
+      "id": "105-6",
+      "age_ma": 105,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 48.4473,
+      "lat": -40.7917,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        84,
+        238,
+        250
+      ]
+    },
+    {
+      "id": "105-7",
+      "age_ma": 105,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 90.7611,
+      "lat": 62.0017,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        67,
+        95,
+        55
+      ]
+    },
+    {
+      "id": "105-8",
+      "age_ma": 105,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 20.9067,
+      "lat": 41.8224,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        88,
+        189,
+        173
+      ]
+    },
+    {
+      "id": "105-9",
+      "age_ma": 105,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 111.5503,
+      "lat": 27.6052,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        104,
+        122,
+        82
+      ]
+    },
+    {
+      "id": "90-1",
+      "age_ma": 90,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 11.4825,
+      "lat": -11.3741,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        139,
+        135,
+        97
+      ]
+    },
+    {
+      "id": "90-2",
+      "age_ma": 90,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -37.0211,
+      "lat": -16.149,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        59,
+        73,
+        56
+      ]
+    },
+    {
+      "id": "90-3",
+      "age_ma": 90,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -63.0995,
+      "lat": 45.9216,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        74,
+        236,
+        251
+      ]
+    },
+    {
+      "id": "90-4",
+      "age_ma": 90,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 124.2898,
+      "lat": -53.9428,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        86,
+        96,
+        61
+      ]
+    },
+    {
+      "id": "90-5",
+      "age_ma": 90,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 40.0487,
+      "lat": -74.8523,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        100,
+        106,
+        70
+      ]
+    },
+    {
+      "id": "90-6",
+      "age_ma": 90,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 52.8456,
+      "lat": -34.9723,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        113,
+        218,
+        240
+      ]
+    },
+    {
+      "id": "90-7",
+      "age_ma": 90,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 88.6054,
+      "lat": 60.8372,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        95,
+        106,
+        72
+      ]
+    },
+    {
+      "id": "90-8",
+      "age_ma": 90,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 18.1153,
+      "lat": 42.4281,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        49,
+        172,
+        205
+      ]
+    },
+    {
+      "id": "90-9",
+      "age_ma": 90,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 107.7471,
+      "lat": 26.1477,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        84,
+        112,
+        64
+      ]
+    },
+    {
+      "id": "65-1",
+      "age_ma": 65,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 12.4403,
+      "lat": -6.3892,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        44,
+        61,
+        43
+      ]
+    },
+    {
+      "id": "65-2",
+      "age_ma": 65,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -46.8173,
+      "lat": -13.1912,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        111,
+        115,
+        78
+      ]
+    },
+    {
+      "id": "65-3",
+      "age_ma": 65,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -75.9958,
+      "lat": 49.9651,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        71,
+        95,
+        63
+      ]
+    },
+    {
+      "id": "65-4",
+      "age_ma": 65,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 129.1612,
+      "lat": -50.0247,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        88,
+        98,
+        63
+      ]
+    },
+    {
+      "id": "65-5",
+      "age_ma": 65,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 29.7928,
+      "lat": -81.5919,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        104,
+        110,
+        76
+      ]
+    },
+    {
+      "id": "65-6",
+      "age_ma": 65,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 62.8968,
+      "lat": -20.1378,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        106,
+        114,
+        73
+      ]
+    },
+    {
+      "id": "65-7",
+      "age_ma": 65,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 89.5089,
+      "lat": 59.5015,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        111,
+        118,
+        85
+      ]
+    },
+    {
+      "id": "65-8",
+      "age_ma": 65,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 15.6527,
+      "lat": 45.0237,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        87,
+        117,
+        79
+      ]
+    },
+    {
+      "id": "65-9",
+      "age_ma": 65,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 104.3734,
+      "lat": 23.9492,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        158,
+        153,
+        123
+      ]
+    },
+    {
+      "id": "50-1",
+      "age_ma": 50,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 13.507,
+      "lat": -3.5088,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        55,
+        73,
+        51
+      ]
+    },
+    {
+      "id": "50-2",
+      "age_ma": 50,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -49.4577,
+      "lat": -12.5478,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        63,
+        85,
+        62
+      ]
+    },
+    {
+      "id": "50-3",
+      "age_ma": 50,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -83.8019,
+      "lat": 48.2366,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        87,
+        102,
+        69
+      ]
+    },
+    {
+      "id": "50-4",
+      "age_ma": 50,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 129.0618,
+      "lat": -49.4496,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        93,
+        105,
+        69
+      ]
+    },
+    {
+      "id": "50-5",
+      "age_ma": 50,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 30.1925,
+      "lat": -80.8108,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        110,
+        111,
+        77
+      ]
+    },
+    {
+      "id": "50-6",
+      "age_ma": 50,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 68.6408,
+      "lat": -2.2246,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        83,
+        109,
+        61
+      ]
+    },
+    {
+      "id": "50-7",
+      "age_ma": 50,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 95.2916,
+      "lat": 60.8884,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        64,
+        85,
+        52
+      ]
+    },
+    {
+      "id": "50-8",
+      "age_ma": 50,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 15.867,
+      "lat": 48.0281,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        107,
+        137,
+        103
+      ]
+    },
+    {
+      "id": "50-9",
+      "age_ma": 50,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 106.6935,
+      "lat": 24.6717,
+      "status": "hold_coast_or_shallow_water",
+      "texture_pixel_rgb": [
+        51,
+        179,
+        206
+      ]
+    },
+    {
+      "id": "35-1",
+      "age_ma": 35,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 15.3611,
+      "lat": 0.9499,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        67,
+        89,
+        66
+      ]
+    },
+    {
+      "id": "35-2",
+      "age_ma": 35,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -52.6297,
+      "lat": -11.769,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        84,
+        111,
+        80
+      ]
+    },
+    {
+      "id": "35-3",
+      "age_ma": 35,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -91.3402,
+      "lat": 46.0557,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        112,
+        123,
+        91
+      ]
+    },
+    {
+      "id": "35-4",
+      "age_ma": 35,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 127.6635,
+      "lat": -44.9348,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        99,
+        115,
+        76
+      ]
+    },
+    {
+      "id": "35-5",
+      "age_ma": 35,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 37.1399,
+      "lat": -79.1153,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        103,
+        107,
+        72
+      ]
+    },
+    {
+      "id": "35-6",
+      "age_ma": 35,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 73.0017,
+      "lat": 9.352,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        103,
+        114,
+        72
+      ]
+    },
+    {
+      "id": "35-7",
+      "age_ma": 35,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 100.8076,
+      "lat": 61.5865,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        65,
+        86,
+        55
+      ]
+    },
+    {
+      "id": "35-8",
+      "age_ma": 35,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 15.5416,
+      "lat": 51.1124,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        86,
+        106,
+        78
+      ]
+    },
+    {
+      "id": "35-9",
+      "age_ma": 35,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 108.1187,
+      "lat": 25.6627,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        81,
+        107,
+        68
+      ]
+    },
+    {
+      "id": "20-1",
+      "age_ma": 20,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 18.2096,
+      "lat": 3.9711,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        68,
+        90,
+        69
+      ]
+    },
+    {
+      "id": "20-2",
+      "age_ma": 20,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -55.5236,
+      "lat": -10.4697,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        80,
+        106,
+        79
+      ]
+    },
+    {
+      "id": "20-3",
+      "age_ma": 20,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -95.5348,
+      "lat": 45.7382,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        114,
+        125,
+        93
+      ]
+    },
+    {
+      "id": "20-4",
+      "age_ma": 20,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 130.7583,
+      "lat": -36.7689,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        162,
+        159,
+        118
+      ]
+    },
+    {
+      "id": "20-5",
+      "age_ma": 20,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 36.2225,
+      "lat": -78.7749,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        101,
+        105,
+        70
+      ]
+    },
+    {
+      "id": "20-6",
+      "age_ma": 20,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 76.385,
+      "lat": 15.5359,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        156,
+        154,
+        116
+      ]
+    },
+    {
+      "id": "20-7",
+      "age_ma": 20,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 104.2744,
+      "lat": 60.6859,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        67,
+        86,
+        58
+      ]
+    },
+    {
+      "id": "20-8",
+      "age_ma": 20,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 18.0793,
+      "lat": 52.2427,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        89,
+        108,
+        88
+      ]
+    },
+    {
+      "id": "20-9",
+      "age_ma": 20,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 109.1262,
+      "lat": 24.8585,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        89,
+        116,
+        73
+      ]
+    },
+    {
+      "id": "0-1",
+      "age_ma": 0,
+      "name_zh": "今非洲中部",
+      "reference_name_en": "Africa",
+      "reference_lon": 20,
+      "reference_lat": 5,
+      "lon": 20.0,
+      "lat": 5.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        74,
+        98,
+        72
+      ]
+    },
+    {
+      "id": "0-2",
+      "age_ma": 0,
+      "name_zh": "今南美洲中部",
+      "reference_name_en": "South America",
+      "reference_lon": -60,
+      "reference_lat": -10,
+      "lon": -60.0,
+      "lat": -10.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        97,
+        122,
+        92
+      ]
+    },
+    {
+      "id": "0-3",
+      "age_ma": 0,
+      "name_zh": "今北美洲中部",
+      "reference_name_en": "North America",
+      "reference_lon": -100,
+      "reference_lat": 45,
+      "lon": -100.0,
+      "lat": 45.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        121,
+        133,
+        95
+      ]
+    },
+    {
+      "id": "0-4",
+      "age_ma": 0,
+      "name_zh": "今澳大利亚中部",
+      "reference_name_en": "Australia",
+      "reference_lon": 135,
+      "reference_lat": -25,
+      "lon": 135.0,
+      "lat": -25.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        207,
+        162,
+        103
+      ]
+    },
+    {
+      "id": "0-5",
+      "age_ma": 0,
+      "name_zh": "今南极洲东部",
+      "reference_name_en": "Antarctica",
+      "reference_lon": 40,
+      "reference_lat": -80,
+      "lon": 40.0,
+      "lat": -80.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        250,
+        250,
+        252
+      ]
+    },
+    {
+      "id": "0-6",
+      "age_ma": 0,
+      "name_zh": "今印度一带",
+      "reference_name_en": "India",
+      "reference_lon": 78,
+      "reference_lat": 23,
+      "lon": 78.0,
+      "lat": 23.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        115,
+        132,
+        90
+      ]
+    },
+    {
+      "id": "0-7",
+      "age_ma": 0,
+      "name_zh": "今西伯利亚一带",
+      "reference_name_en": "Siberia",
+      "reference_lon": 105,
+      "reference_lat": 60,
+      "lon": 105.0,
+      "lat": 60.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        89,
+        114,
+        74
+      ]
+    },
+    {
+      "id": "0-8",
+      "age_ma": 0,
+      "name_zh": "今欧洲中部",
+      "reference_name_en": "Europe",
+      "reference_lon": 20,
+      "reference_lat": 52,
+      "lon": 20.0,
+      "lat": 52.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        95,
+        124,
+        80
+      ]
+    },
+    {
+      "id": "0-9",
+      "age_ma": 0,
+      "name_zh": "今中国南部一带",
+      "reference_name_en": "South China",
+      "reference_lon": 110,
+      "reference_lat": 25,
+      "lon": 110.0,
+      "lat": 25.0,
+      "status": "candidate_approximate",
+      "texture_pixel_rgb": [
+        93,
+        120,
+        75
+      ]
+    }
+  ]
+}

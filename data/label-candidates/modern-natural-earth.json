@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "status": "research_candidates_not_production",
+  "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+  "license": "Public domain",
+  "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "notes": [
+    "Modern labels only; do not reuse these fixed coordinates for ancient eras.",
+    "Label anchors are manually chosen and tested inside downloaded Natural Earth polygons; they are not source-provided label coordinates.",
+    "Chinese names normalized to Simplified Chinese; north/south ocean names distinguished explicitly.",
+    "Seven continent features include Australia (not all Oceania); seven ocean features split Atlantic and Pacific into north/south."
+  ],
+  "sources": [
+    {
+      "file": "ne_regions.geojson",
+      "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_geography_regions_polys.geojson"
+    },
+    {
+      "file": "ne_marine.geojson",
+      "sha256": "53f865e8ffa966cdd402145c82c5cd14ee7ce974cd0eb9a3f59f03a4cfd2d66c",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_geography_marine_polys.geojson"
+    }
+  ],
+  "labels": [
+    {
+      "id": "1159104361",
+      "age_ma": 0,
+      "name_en": "SOUTH AMERICA",
+      "source_name_zh": "南美洲",
+      "name_zh": "南美洲",
+      "kind": "continent",
+      "lon": -60,
+      "lat": -10,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104363",
+      "age_ma": 0,
+      "name_en": "AUSTRALIA",
+      "source_name_zh": "澳大利亞洲",
+      "name_zh": "澳大利亚大陆",
+      "kind": "continent",
+      "lon": 135,
+      "lat": -25,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104365",
+      "age_ma": 0,
+      "name_en": "AFRICA",
+      "source_name_zh": "非洲",
+      "name_zh": "非洲",
+      "kind": "continent",
+      "lon": 20,
+      "lat": 5,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104367",
+      "age_ma": 0,
+      "name_en": "ANTARCTICA",
+      "source_name_zh": "南極洲",
+      "name_zh": "南极洲",
+      "kind": "continent",
+      "lon": 40,
+      "lat": -80,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104597",
+      "age_ma": 0,
+      "name_en": "ASIA",
+      "source_name_zh": "亞洲",
+      "name_zh": "亚洲",
+      "kind": "continent",
+      "lon": 90,
+      "lat": 45,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104603",
+      "age_ma": 0,
+      "name_en": "EUROPE",
+      "source_name_zh": "欧洲",
+      "name_zh": "欧洲",
+      "kind": "continent",
+      "lon": 20,
+      "lat": 52,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159104607",
+      "age_ma": 0,
+      "name_en": "NORTH AMERICA",
+      "source_name_zh": "北美洲",
+      "name_zh": "北美洲",
+      "kind": "continent",
+      "lon": -100,
+      "lat": 45,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115017",
+      "age_ma": 0,
+      "name_en": "Arctic Ocean",
+      "source_name_zh": "北冰洋",
+      "name_zh": "北冰洋",
+      "kind": "ocean",
+      "lon": 0,
+      "lat": 85,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115037",
+      "age_ma": 0,
+      "name_en": "SOUTHERN OCEAN",
+      "source_name_zh": "南冰洋",
+      "name_zh": "南大洋",
+      "kind": "ocean",
+      "lon": 0,
+      "lat": -62,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115057",
+      "age_ma": 0,
+      "name_en": "North Atlantic Ocean",
+      "source_name_zh": "大西洋",
+      "name_zh": "北大西洋",
+      "kind": "ocean",
+      "lon": -40,
+      "lat": 30,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115079",
+      "age_ma": 0,
+      "name_en": "North Pacific Ocean",
+      "source_name_zh": "太平洋",
+      "name_zh": "北太平洋",
+      "kind": "ocean",
+      "lon": -150,
+      "lat": 30,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115099",
+      "age_ma": 0,
+      "name_en": "South Pacific Ocean",
+      "source_name_zh": "太平洋",
+      "name_zh": "南太平洋",
+      "kind": "ocean",
+      "lon": -130,
+      "lat": -30,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115123",
+      "age_ma": 0,
+      "name_en": "INDIAN OCEAN",
+      "source_name_zh": "印度洋",
+      "name_zh": "印度洋",
+      "kind": "ocean",
+      "lon": 80,
+      "lat": -25,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    },
+    {
+      "id": "1159115149",
+      "age_ma": 0,
+      "name_en": "South Atlantic Ocean",
+      "source_name_zh": "大西洋",
+      "name_zh": "南大西洋",
+      "kind": "ocean",
+      "lon": -20,
+      "lat": -30,
+      "coordinate_method": "manually_selected_label_anchor_inside_source_polygon",
+      "inside_source_polygon": true,
+      "status": "candidate_approximate"
+    }
+  ]
+}

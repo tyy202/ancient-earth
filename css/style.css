@@ -18,6 +18,19 @@ button:focus-visible, select:focus-visible { outline: 2px solid #a4d3ff; outline
 .mobile-copy { display: none; }
 #webgl { position: fixed; inset: 0; touch-action: none; }
 #webgl canvas { display: block; }
+#globe-labels { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.globe-label {
+  position: absolute; top: 0; left: 0; white-space: nowrap; padding: 2px 3px;
+  font-size: 14px; font-weight: bold; color: #fff0c8;
+  text-shadow: 0 1px 3px #000, 1px 0 3px #000, -1px 0 3px #000, 0 -1px 3px #000;
+}
+.globe-label--ocean { color: #c0eaff; font-weight: normal; }
+.globe-label--fossil { color: #ffd391; background: rgba(40, 22, 4, .7); border-radius: 5px; }
+.life-controls { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+.life-controls select { flex: 1; min-width: 0; }
+#life-status:not([hidden]) { display: block; color: #ffd391; margin-bottom: 4px; }
+.life-detail { color: #ffd391; border-top: 1px solid #505050; padding-top: 8px; }
+.label-note { display: block; margin-bottom: 4px; }
 .top {
   position: absolute; z-index: 2; top: 0; left: 0; width: 100%;
   padding: 8px 20px; border-bottom: 1px solid #404040;
@@ -62,6 +75,7 @@ button:focus-visible, select:focus-visible { outline: 2px solid #a4d3ff; outline
   #jump-to { flex: 1; width: 100%; }
   .view-controls { margin-top: 8px; }
   .view-controls button { flex: 1; }
+  .globe-label { font-size: 12px; }
   #webgl { grid-area: globe; position: relative; min-width: 0; min-height: 0; overflow: hidden; }
   #info-panel {
     grid-area: info; position: static; width: auto; max-width: none;

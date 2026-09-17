@@ -64,10 +64,18 @@
         <option value="240">三叠纪</option>
         <option value="170">侏罗纪</option>
         <option value="105">白垩纪</option>
-        <option value="65">恐龙灭绝</option>
+        <option value="65">恐龙灭绝之后</option>
+      </select>
+    </div>
+    <div class="life-controls">
+      <label for="life-group">生物：</label>
+      <select id="life-group">
+        <option value="none">不显示生物</option>
+        <option value="dinosaurs">恐龙（非鸟类）</option>
       </select>
     </div>
     <div class="view-controls">
+      <button type="button" id="toggle-labels" class="button" aria-pressed="false" aria-controls="globe-labels">隐藏地名</button>
       <button type="button" id="remove-clouds" class="button" aria-pressed="false">隐藏云层</button>
       <button type="button" id="stop-rotation" class="button" aria-pressed="false">停止自转</button>
     </div>
@@ -80,6 +88,8 @@
     <div id="explanation"></div>
   </section>
   <div id="instructions">
+    <span id="life-status" role="status" hidden></span>
+    <span class="label-note">大陆与大洋名称 · 位置示意</span>
     <span class="desktop-copy">拖动旋转 · 滚轮缩放 · ← → 切换年代</span>
     <span class="mobile-copy">单指旋转 · 双指缩放</span>
   </div>
@@ -94,6 +104,9 @@
 	<script src="js/THREEx.WindowResize.js"></script>
 	<script src="js/countdown.min.js"></script>
 	<script src="js/explain.js"></script>
+	<script src="js/geography-data.js"></script>
+	<script src="js/dinosaur-data.js"></script>
+	<script src="js/GlobeLabels.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
