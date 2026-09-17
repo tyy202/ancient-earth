@@ -18,11 +18,11 @@ var Detector = {
 		if ( !this.webgl ) {
 
 			element.innerHTML = window.WebGLRenderingContext ? [
-				'Your graphics card does not seem to support WebGL.<br />',
-				'Use a WebGL-enabled browser and enable hardware acceleration in its settings.'
+				'您的显卡似乎不支持 WebGL。<br />',
+				'请使用支持 WebGL 的浏览器，并在设置中启用硬件加速。'
 			].join( '\n' ) : [
-				'Your browser does not seem to support WebGL.<br/>',
-				'Use a WebGL-enabled browser and enable hardware acceleration in its settings.'
+				'您的浏览器似乎不支持 WebGL。<br/>',
+				'请使用支持 WebGL 的浏览器，并在设置中启用硬件加速。'
 			].join( '\n' );
 
 		}

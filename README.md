@@ -1,8 +1,32 @@
-# ancient-earth
-Earth through the ages, from 600 million years ago to present.  Online [here](http://dinosaurpictures.org/ancient-earth/#600).
+# 古地球（Ancient Earth）
 
-This visualization is entirely client side.  To start, run `python -m http.server 8000 --bind 127.0.0.1` in this directory and open `http://127.0.0.1:8000` in a WebGL-enabled browser.
+一个展示从 6 亿年前到现代海陆分布变化的互动三维地球仪。界面和年代说明已翻译为简体中文。
 
-Texture maps are courtesy of [Northern Arizona University](http://www2.nau.edu/rcb7/rect_globe.html).
+## 本地运行
 
-All runtime scripts, maps, and images are included locally. The page uses system fonts and does not load external fonts or analytics. Social sharing and external navigation links have been removed from the UI, so the app can be used without an internet connection while the local server is running. The links above are reference and attribution links only.
+在项目目录中运行：
+
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+然后使用支持 WebGL 的浏览器打开 `http://127.0.0.1:8000`。
+
+所有运行所需的脚本、地图和图片都已包含在本地。页面使用系统字体，不加载外部字体或统计脚本，也不包含社交分享和外站跳转入口。本地服务运行时，无需连接互联网。
+
+## 操作方式
+
+- 拖动地球改变观察角度，滚动鼠标滚轮缩放。
+- 使用顶部下拉菜单或左右方向键切换年代。
+- 使用“跳转到”菜单查看预设的地质时期或生命演化事件。
+- 点击“隐藏云层”或“停止自转”调整展示效果。
+- 网址中的 `#600` 表示 6 亿年前，`#0` 表示现代。
+
+中文说明依据原项目文字翻译，沿用原项目的年代与事件对应关系。
+
+## 来源
+
+- [原项目在线展示](http://dinosaurpictures.org/ancient-earth/#600)
+- 地图纹理由[北亚利桑那大学](http://www2.nau.edu/rcb7/rect_globe.html)提供。
+
+以上链接仅用于来源说明，不是运行依赖。许可证见 `LICENSE`。

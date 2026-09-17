@@ -46,7 +46,7 @@
   if (window.location.hash) {
     startingYear = parseInt(window.location.hash.slice(1));
   }
-  yearsago.value = startingYear === 0 ? '0' : startingYear + ' million';
+  yearsago.value = String(startingYear);
   updateSelectWithValue(startingYear);
   onYearsAgoChanged();
 
@@ -103,7 +103,7 @@
   }
 
   function updateSelectWithValue(howmany) {
-    document.getElementById('how-long-ago').innerHTML = yearsago.value;
+    document.getElementById('how-long-ago').textContent = yearsago.options[yearsago.selectedIndex].text;
     document.getElementById('explanation').innerHTML = EXPLAIN_MAP[parseInt(howmany)];
   }
 
@@ -143,7 +143,7 @@
 
     var jumpToElt = document.getElementById('jump-to');
     jumpToElt.onchange = function(e) {
-      yearsago.value = jumpToElt.value + ' million';
+      yearsago.value = jumpToElt.value;
       onYearsAgoChanged();
     };
   }

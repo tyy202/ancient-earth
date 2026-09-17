@@ -1,15 +1,15 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ancient Earth globe</title>
+	<title>古地球 · 地球的历史变迁</title>
 	<style>
     body {
       margin: 0;
       overflow: hidden;
       background-color: #000;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
     }
 		.tm  { position: absolute; top: 10px; right: 10px; }
 		.webgl-error { font: 15px/30px monospace; text-align: center; color: #fff; margin: 50px; }
@@ -46,7 +46,7 @@
     }
 
     .title {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
       font-size: 20px;
       font-weight: bold;
       position:absolute;
@@ -134,74 +134,74 @@
 <body>
   <div class="top">
     <strong class="main-heading">
-      What did Earth look like
+      看看
       <select id="years-ago">
-        <option>600 million</option>
-        <option>560 million</option>
-        <option>540 million</option>
-        <option>500 million</option>
-        <option>470 million</option>
-        <option>450 million</option>
-        <option>430 million</option>
-        <option>400 million</option>
-        <option>370 million</option>
-        <option>340 million</option>
-        <option>300 million</option>
-        <option>280 million</option>
-        <option>260 million</option>
-        <option>240 million</option>
-        <option>220 million</option>
-        <option>200 million</option>
-        <option>170 million</option>
-        <option>150 million</option>
-        <option>120 million</option>
-        <option>105 million</option>
-        <option>90 million</option>
-        <option>65 million</option>
-        <option>50 million</option>
-        <option>35 million</option>
-        <option>20 million</option>
-        <option>0</option>
+        <option value="600">6 亿年前</option>
+        <option value="560">5.6 亿年前</option>
+        <option value="540">5.4 亿年前</option>
+        <option value="500">5 亿年前</option>
+        <option value="470">4.7 亿年前</option>
+        <option value="450">4.5 亿年前</option>
+        <option value="430">4.3 亿年前</option>
+        <option value="400">4 亿年前</option>
+        <option value="370">3.7 亿年前</option>
+        <option value="340">3.4 亿年前</option>
+        <option value="300">3 亿年前</option>
+        <option value="280">2.8 亿年前</option>
+        <option value="260">2.6 亿年前</option>
+        <option value="240">2.4 亿年前</option>
+        <option value="220">2.2 亿年前</option>
+        <option value="200">2 亿年前</option>
+        <option value="170">1.7 亿年前</option>
+        <option value="150">1.5 亿年前</option>
+        <option value="120">1.2 亿年前</option>
+        <option value="105">1.05 亿年前</option>
+        <option value="90">9000 万年前</option>
+        <option value="65">6500 万年前</option>
+        <option value="50">5000 万年前</option>
+        <option value="35">3500 万年前</option>
+        <option value="20">2000 万年前</option>
+        <option value="0">现代</option>
       </select>
-      years ago?
+      的地球是什么样子？
     </strong>
   </div>
   <div id="controls">
     <div class="jump-to-container">
-      <span>Jump to... </span>
+      <span>跳转到：</span>
       <select id="jump-to" class="button">
-        <option value="600">first multicellular life</option>
-        <option value="540">first shells</option>
-        <option value="470">first coral reefs</option>
-        <option value="470">first vertebrates</option>
-        <option value="430">first land plants</option>
-        <option value="400">first land animals</option>
-        <option value="400">first insects</option>
-        <option value="300">first reptiles</option>
-        <option value="220">first dinosaurs</option>
-        <option value="120">first flowers</option>
-        <option value="35">first primates</option>
-        <option value="35">first grass</option>
-        <option value="20">first hominids</option>
+        <option value="600">最早的多细胞生命</option>
+        <option value="540">最早的壳体</option>
+        <option value="470">最早的珊瑚礁</option>
+        <option value="470">最早的脊椎动物</option>
+        <option value="430">最早的陆生植物</option>
+        <option value="400">最早的陆生动物</option>
+        <option value="400">最早的昆虫</option>
+        <option value="300">最早的爬行动物</option>
+        <option value="220">最早的恐龙</option>
+        <option value="120">最早的花</option>
+        <option value="35">最早的灵长类动物</option>
+        <option value="35">最早的禾本科植物</option>
+        <option value="20">最早的人科动物</option>
 
-        <option value="600">Pannotia supercontinent</option>
-        <option value="280">Pangea supercontinent</option>
-        <option value="240">Triassic</option>
-        <option value="170">Jurassic</option>
-        <option value="105">Cretaceous</option>
-        <option value="65">dinosaur extinction</option>
+        <option value="600">潘诺西亚超大陆</option>
+        <option value="280">盘古超大陆</option>
+        <option value="240">三叠纪</option>
+        <option value="170">侏罗纪</option>
+        <option value="105">白垩纪</option>
+        <option value="65">恐龙灭绝</option>
       </select>
     </div>
-    <span id="remove-clouds" class="button">Remove clouds</span><br>
-    <span id="stop-rotation" class="button">Stop rotation</span>
+    <span id="remove-clouds" class="button">隐藏云层</span><br>
+    <span id="stop-rotation" class="button">停止自转</span>
   </div>
   <div id="explanation"></div>
   <div id="instructions">
-    Use the ← and → keys to step through time.
+    使用 ← 和 → 方向键切换年代。
   </div>
-  <div class="title">Earth, <span id="how-long-ago">600 million</span> years ago</div>
+  <div class="title">地球 · <span id="how-long-ago">6 亿年前</span></div>
 
-  <div id="loading">Loading...</div>
+  <div id="loading">正在加载……</div>
 
 	<div id="webgl"></div>
 
