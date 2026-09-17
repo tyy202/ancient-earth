@@ -18,11 +18,11 @@ var Detector = {
 		if ( !this.webgl ) {
 
 			element.innerHTML = window.WebGLRenderingContext ? [
-				'Your graphics card does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>.<br />',
-				'Find out how to get it <a href="http://get.webgl.org/">here</a>.'
+				'Your graphics card does not seem to support WebGL.<br />',
+				'Use a WebGL-enabled browser and enable hardware acceleration in its settings.'
 			].join( '\n' ) : [
-				'Your browser does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>.<br/>',
-				'Find out how to get it <a href="http://get.webgl.org/">here</a>.'
+				'Your browser does not seem to support WebGL.<br/>',
+				'Use a WebGL-enabled browser and enable hardware acceleration in its settings.'
 			].join( '\n' );
 
 		}
