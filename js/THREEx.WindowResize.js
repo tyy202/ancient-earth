@@ -23,16 +23,24 @@ var THREEx	= THREEx 		|| {};
  * @param {Object} renderer the renderer to update
  * @param {Object} Camera the camera to update
 */
-THREEx.WindowResize	= function(renderer, camera){
+THREEx.WindowResize	= function(renderer, camera, container){
 	var callback	= function(){
+		var width = container ? container.clientWidth : window.innerWidth;
+		var height = container ? container.clientHeight : window.innerHeight;
+		if (!width || !height) return;
 		// notify the renderer of the size change
-		renderer.setSize( window.innerWidth, window.innerHeight );
+		renderer.setSize(width, height);
 		// update the camera
-		camera.aspect	= window.innerWidth / window.innerHeight;
+		camera.aspect = width / height;
+		// Preserve enough horizontal field of view in a narrow portrait canvas.
+		camera.fov = Math.atan(Math.tan(Math.PI / 8) / Math.min(camera.aspect, 1)) * 360 / Math.PI;
 		camera.updateProjectionMatrix();
 	}
 	// bind the resize event
 	window.addEventListener('resize', callback, false);
+	var observer = container && window.ResizeObserver ? new ResizeObserver(callback) : null;
+	if (observer) observer.observe(container);
+	callback();
 	// return .stop() the function to stop watching window resize
 	return {
 		/**
@@ -40,6 +48,7 @@ THREEx.WindowResize	= function(renderer, camera){
 		*/
 		stop	: function(){
 			window.removeEventListener('resize', callback);
+			if (observer) observer.disconnect();
 		}
 	};
 }

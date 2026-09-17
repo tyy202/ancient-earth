@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+body {
+  background: #000;
+  color: #eee;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+}
+button, select { font: inherit; color: inherit; }
+button, select {
+  background: #202020;
+  border: 1px solid #505050;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+button:hover { background: #303030; }
+button:focus-visible, select:focus-visible { outline: 2px solid #a4d3ff; outline-offset: 2px; }
+.mobile-copy { display: none; }
+#webgl { position: fixed; inset: 0; touch-action: none; }
+#webgl canvas { display: block; }
+.top {
+  position: absolute; z-index: 2; top: 0; left: 0; width: 100%;
+  padding: 8px 20px; border-bottom: 1px solid #404040;
+  background: #000; text-align: center;
+}
+.main-heading { display: flex; align-items: center; justify-content: center; gap: 10px; }
+#years-ago { font-weight: bold; }
+#controls { position: absolute; z-index: 2; top: 72px; right: 24px; font-size: 14px; }
+.jump-to-container { display: flex; gap: 8px; align-items: center; }
+#jump-to { min-width: 0; }
+.view-controls { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
+#info-panel {
+  position: absolute; z-index: 2; bottom: 24px; left: 24px;
+  width: 320px; max-width: calc(100% - 48px);
+  display: flex; flex-direction: column-reverse; gap: 16px;
+}
+.title { margin: 0; font-size: 20px; }
+#explanation { font-size: 14px; line-height: 1.7; max-height: 45vh; overflow-y: auto; }
+#explanation-toggle { display: none; }
+#instructions { position: absolute; z-index: 2; bottom: 24px; right: 24px; font-size: 12px; color: #aaa; pointer-events: none; }
+#loading { position: fixed; z-index: 3; top: 45%; width: 100%; text-align: center; font-size: 24px; pointer-events: none; }
+.webgl-error { margin: 20px; padding-top: 100px; line-height: 1.8; text-align: center; }
+
+/* Phones have a separate layout. Coarse-pointer tablets/landscape phones use it too. */
+@media (max-width: 767px), (max-width: 1024px) and (pointer: coarse) {
+  body {
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    grid-template-areas: "header" "controls" "globe" "info" "instructions";
+    grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  }
+  .desktop-copy { display: none; }
+  .mobile-copy { display: inline; }
+  button, select { min-height: 44px; font-size: 16px; touch-action: manipulation; }
+  .top { grid-area: header; position: static; padding: 8px 12px; }
+  .main-heading { justify-content: space-between; }
+  #years-ago { min-width: 150px; }
+  #controls { grid-area: controls; position: static; padding: 8px 12px; font-size: 14px; }
+  .jump-to-container label { white-space: nowrap; }
+  #jump-to { flex: 1; width: 100%; }
+  .view-controls { margin-top: 8px; }
+  .view-controls button { flex: 1; }
+  #webgl { grid-area: globe; position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+  #info-panel {
+    grid-area: info; position: static; width: auto; max-width: none;
+    display: block; margin: 0 12px; padding: 8px 0;
+    border-top: 1px solid #303030;
+  }
+  .info-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .title { font-size: 16px; }
+  #explanation-toggle { display: block; flex-shrink: 0; padding: 8px; font-size: 14px; }
+  #explanation { display: none; max-height: 23vh; max-height: 23dvh; margin-top: 8px; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  #info-panel.is-expanded #explanation { display: block; }
+  #instructions { grid-area: instructions; position: static; text-align: center; padding: 0 12px 8px; }
+  .webgl-error { margin: 12px; padding: 0; font-size: 14px; }
+}
+
+/* Keep landscape controls beside the globe rather than consuming its height. */
+@media (max-width: 767px) and (orientation: landscape), (max-width: 1024px) and (pointer: coarse) and (orientation: landscape) {
+  body {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+    grid-template-areas: "header controls" "globe controls" "globe info" "instructions info";
+  }
+  #controls { padding-top: 12px; }
+  .jump-to-container { flex-direction: column; align-items: stretch; gap: 4px; }
+  #jump-to { flex: none; }
+  .view-controls { flex-wrap: wrap; }
+  .view-controls button { padding: 8px; }
+  #info-panel { align-self: end; }
+  #explanation { max-height: 26vh; }
+}

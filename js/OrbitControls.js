@@ -677,12 +677,14 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	}
 
-	function touchend( /* event */ ) {
+	function touchend( event ) {
 
 		if ( scope.enabled === false ) return;
 
 		scope.dispatchEvent( endEvent );
 		state = STATE.NONE;
+		// Rebase the remaining fingers when a pinch becomes a one-finger drag.
+		if (event.touches && event.touches.length) touchstart(event);
 
 	}
 
@@ -693,7 +695,11 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	this.domElement.addEventListener( 'touchstart', touchstart, false );
 	this.domElement.addEventListener( 'touchend', touchend, false );
-	this.domElement.addEventListener( 'touchmove', touchmove, false );
+	this.domElement.addEventListener( 'touchmove', touchmove, { passive: false } );
+	this.domElement.addEventListener( 'touchcancel', function() {
+		state = STATE.NONE;
+		scope.dispatchEvent( endEvent );
+	}, false );
 
 	window.addEventListener( 'keydown', onKeyDown, false );
 

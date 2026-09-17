@@ -1,0 +1,13 @@
+**
+!Dockerfile
+!index.html
+!LICENSE
+!css/
+!css/**
+!js/
+!js/**
+!images/
+!images/fair_clouds_4k.png
+!images/galaxy_starfield.png
+!images/scrape/
+!images/scrape/*.jpg

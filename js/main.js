@@ -2,12 +2,14 @@
   var webglEl = document.getElementById('webgl');
 
   if (!Detector.webgl) {
+    document.getElementById('loading').style.display = 'none';
     Detector.addGetWebGLMessage(webglEl);
     return;
   }
 
-  var width  = window.innerWidth,
-    height = window.innerHeight;
+  var width = webglEl.clientWidth,
+    height = webglEl.clientHeight;
+  var mobileLayout = window.matchMedia('(max-width: 767px), (max-width: 1024px) and (pointer: coarse)');
 
   // UI elements
   var yearsago = document.getElementById('years-ago');
@@ -28,9 +30,15 @@
   var scene = new THREE.Scene();
 
   var camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000);
-  camera.position.z = 4;
+  camera.position.z = mobileLayout.matches ? 2.2 : 4;
 
   var renderer = new THREE.WebGLRenderer();
+  renderer.domElement.tabIndex = 0;
+  renderer.domElement.setAttribute('aria-label', '互动地球：拖动旋转，缩放查看，左右方向键切换年代');
+  renderer.domElement.addEventListener('mousedown', function() {
+    // OrbitControls prevents the default mouse action, so focus explicitly.
+    renderer.domElement.focus();
+  });
   renderer.setSize(width, height);
 
   //scene.add(new THREE.AmbientLight(0x333333));
@@ -41,16 +49,18 @@
   scene.add(light);
 
   var sphere;
+  var loadedCount = 0;
   var DEFAULT_YEAR = 600;
   var startingYear = DEFAULT_YEAR;
   if (window.location.hash) {
     startingYear = parseInt(window.location.hash.slice(1));
   }
+  if (!Object.prototype.hasOwnProperty.call(EXPLAIN_MAP, startingYear)) {
+    startingYear = DEFAULT_YEAR;
+  }
   yearsago.value = String(startingYear);
   updateSelectWithValue(startingYear);
   onYearsAgoChanged();
-
-  var loadedCount = 0;
 
   var clouds = createClouds(radius, segments);
   clouds.rotation.y = rotation;
@@ -64,8 +74,17 @@
   controls.maxDistance = 20;
   controls.noKeys = true;
   controls.rotateSpeed = 1.4;
+  controls.addEventListener('start', function() {
+    simulationClicked = true;
+  });
+  function updateInteractionMode() {
+    controls.noPan = mobileLayout.matches;
+    controls.rotateSpeed = mobileLayout.matches ? 0.8 : 1.4;
+  }
+  updateInteractionMode();
+  mobileLayout.addListener(updateInteractionMode);
 
-  THREEx.WindowResize(renderer, camera);
+  THREEx.WindowResize(renderer, camera, webglEl);
 
   webglEl.appendChild(renderer.domElement);
 
@@ -105,11 +124,17 @@
   function updateSelectWithValue(howmany) {
     document.getElementById('how-long-ago').textContent = yearsago.options[yearsago.selectedIndex].text;
     document.getElementById('explanation').innerHTML = EXPLAIN_MAP[parseInt(howmany)];
+    document.getElementById('explanation').scrollTop = 0;
   }
 
   function onYearsAgoChanged() {
     var howmany = parseInt(yearsago.value);
-    scene.remove(sphere);
+    if (sphere) {
+      scene.remove(sphere);
+      // Each era owns a material and texture; release them on phones as well as desktop.
+      sphere.material.map.dispose();
+      sphere.material.dispose();
+    }
     var img = imagePathForYearsAgo(howmany);
     sphere = createSphere(radius, segments, img);
     sphere.rotation.y = rotation;
@@ -124,6 +149,7 @@
 
     var t = -1;
     document.addEventListener('keydown', function(e) {
+      if (/^(SELECT|INPUT|TEXTAREA|BUTTON)$/.test(e.target.tagName)) return;
       var now = new Date().getTime();
       if (now - t > 150) {
         // Left and right keys are 37 and 39 respectively, they step through the
@@ -181,15 +207,26 @@
   }
 
   function setupControls() {
+    var cloudsHidden = false;
     var removeCloudsElt = document.getElementById('remove-clouds');
     removeCloudsElt.onclick = function() {
-      scene.remove(clouds);
-      removeCloudsElt.style.display = 'none';
+      cloudsHidden = !cloudsHidden;
+      clouds.visible = !cloudsHidden;
+      removeCloudsElt.textContent = cloudsHidden ? '显示云层' : '隐藏云层';
+      removeCloudsElt.setAttribute('aria-pressed', String(cloudsHidden));
     };
     var stopRotationElt = document.getElementById('stop-rotation');
     stopRotationElt.onclick = function() {
-      noRotation = true;
-      stopRotationElt.style.display = 'none';
+      noRotation = !noRotation;
+      stopRotationElt.textContent = noRotation ? '恢复自转' : '停止自转';
+      stopRotationElt.setAttribute('aria-pressed', String(noRotation));
+    };
+    var explanationToggle = document.getElementById('explanation-toggle');
+    explanationToggle.onclick = function() {
+      var expanded = explanationToggle.getAttribute('aria-expanded') !== 'true';
+      document.getElementById('info-panel').classList.toggle('is-expanded', expanded);
+      explanationToggle.setAttribute('aria-expanded', String(expanded));
+      explanationToggle.textContent = expanded ? '收起说明' : '展开说明';
     };
   }
 
